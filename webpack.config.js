@@ -34,6 +34,10 @@ const saasRules = {
     }
   ]
 }
+const urlRules = {
+  test: /\.(png|jpg)$/,
+  loader: 'url-loader'
+}
 module.exports = (env, { mode }) => ({
   mode: mode,
   entry: './src/index.js',
@@ -48,7 +52,8 @@ module.exports = (env, { mode }) => ({
     rules: [
       javascriptRules,
       imagesRules,
-      saasRules
+      saasRules,
+      urlRules
       // styleRules,
       // imageRules
     ]
