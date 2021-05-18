@@ -1,5 +1,18 @@
 # Change Log
 
+## [1.1.1] 2021-05-18
+### Bug fixing
+### Major style changes
+    Style first view, landing page.
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+```
+### Warning
+
 ## [1.1.0] 2021-05-18
 ### Bug fixing
 ### Major style changes
