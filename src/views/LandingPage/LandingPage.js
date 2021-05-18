@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 // core components
 import Header from "../../components/Header/Header";
@@ -60,12 +61,12 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.youtube.com/watch?v=D3AzWbBwVI8"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                <PlayArrowIcon />
+                Ver video
               </Button>
             </GridItem>
           </GridContainer>

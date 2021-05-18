@@ -13,7 +13,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
-
+import GroupIcon from '@material-ui/icons/Group';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button.js";
@@ -27,7 +28,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+        {/* <CustomDropdown
           noLiPadding
           buttonText="Components"
           buttonProps={{
@@ -47,7 +48,15 @@ export default function HeaderLinks(props) {
               Documentation
             </a>
           ]}
-        />
+        /> */}
+        <Button
+          //href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <GroupIcon className={classes.icons} /> Equipo
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
@@ -56,7 +65,7 @@ export default function HeaderLinks(props) {
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <MenuBookIcon className={classes.icons} /> Material
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
