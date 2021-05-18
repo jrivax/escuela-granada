@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const javascriptRules = {
   test: /\.js$/,
   exclude: /(node_modules|bower_components)/,
@@ -52,17 +54,15 @@ module.exports = (env, { mode }) => ({
     rules: [
       javascriptRules,
       imagesRules,
-      saasRules,
-      urlRules
-      // styleRules,
-      // imageRules
+      saasRules
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Escuela Granada',
       template: 'src/index.html'
-    })
+    }),
+    new MiniCssExtractPlugin()
   ]
 
 });

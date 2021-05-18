@@ -36,6 +36,7 @@ export default function Parallax(props) {
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
   const { filter, className, children, style, image, small } = props;
+
   const classes = useStyles();
   const parallaxClasses = classNames({
     [classes.parallax]: true,

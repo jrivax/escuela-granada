@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 
+import "../src/assets/scss/material-kit-react.scss";
+
 // pages for this product
 import LandingPage from "../src/views/LandingPage";
-
 
 var hist = createBrowserHistory();
 
