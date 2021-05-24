@@ -20,19 +20,16 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
+          <h2 className={classes.title}>Ponte en contacto con nosotros</h2>
           <h4 className={classes.description}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will responde get back to you in a couple of
-            hours.
+            Si estás interesado no dudes en ponerte en contacto con nosotros y le ofreceremos toda la información necesaria.
           </h4>
           <form>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Name"
-                  id="name"
+                  labelText="Nombre y apellidos"
+                  id="nombre"
                   formControlProps={{
                     fullWidth: true
                   }}
@@ -40,7 +37,7 @@ export default function WorkSection() {
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Email"
+                  labelText="Email"
                   id="email"
                   formControlProps={{
                     fullWidth: true
@@ -48,8 +45,8 @@ export default function WorkSection() {
                 />
               </GridItem>
               <CustomInput
-                labelText="Your Message"
-                id="message"
+                labelText="Tu mensaje"
+                id="mensaje"
                 formControlProps={{
                   fullWidth: true,
                   className: classes.textArea
@@ -60,10 +57,21 @@ export default function WorkSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
-                <Button color="primary">Send Message</Button>
+                <Button color="primary">Mandar mensaje</Button>
               </GridItem>
             </GridContainer>
           </form>
+        </GridItem>
+        <GridItem cs={12} sm={12} md={8}>
+          <h4 className={classes.description}>
+            c/ Jardín de San Federico, 5 Bajo Izq. 28009 Madrid.
+          </h4>
+          <h4 className={classes.description}>
+            Tlf. 91 401 59 68
+          </h4>
+          <h4 className={classes.description}>
+            Tlf. 638 44 57 06
+          </h4>
         </GridItem>
       </GridContainer>
     </div>
