@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.2.0] 2021-08-18
+### Added
+Change of library, techs and styles
+### Bug fixing
+### Major style changes
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+```
+### Warning
+
 ## [1.1.1] 2021-05-18
 ### Bug fixing
 ### Major style changes
