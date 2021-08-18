@@ -1,6 +1,21 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const fonts = {
+  test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+  use: {
+    loader: 'file-loader',
+    options: {
+      name: '[name].[ext]',
+      outputPath: 'fonts/'
+    }
+  }
+}
+const css = {
+  test: /\.css$/i,
+  use: ["style-loader", "css-loader"],
+}
+
 const javascriptRules = {
   test: /\.js$/,
   exclude: /(node_modules|bower_components)/,
@@ -36,13 +51,14 @@ const saasRules = {
     }
   ]
 }
-const urlRules = {
-  test: /\.(png|jpg)$/,
-  loader: 'url-loader'
-}
+// const urlRules = {
+//   test: /\.(png|jpg)$/,
+//   loader: 'url-loader'
+// }
 module.exports = (env, { mode }) => ({
   mode: mode,
   entry: './src/index.js',
+
   output: {
     filename: 'app.[contenthash].js'
   },
@@ -54,7 +70,9 @@ module.exports = (env, { mode }) => ({
     rules: [
       javascriptRules,
       imagesRules,
-      saasRules
+      css,
+      saasRules,
+      fonts
     ]
   },
   plugins: [
