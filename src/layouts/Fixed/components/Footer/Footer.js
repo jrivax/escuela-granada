@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import WebbeeLogo from 'svg/logos/Webbee';
+import logo from 'img/logo_esg_granada.png';
 
 const Footer = () => (
   <Grid container spacing={2}>
@@ -25,7 +26,8 @@ const Footer = () => (
           height={24}
           width={35}
         >
-          <WebbeeLogo height={'100%'} width={'100%'} />
+          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+          <img src={logo} alt={"logo"} />
         </Box>
         <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
           <Box marginTop={1} marginRight={2}>

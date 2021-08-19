@@ -30,6 +30,7 @@ module.exports = function (api) {
           "common/*":  "./src/common/*",
           "layouts/*":  "./src/layouts/*",
           "svg/*":  "./src/svg/*",
+          "img/*":  "./src/img/*",
           "views/*":  "./src/views/*",
           "theme/*":  "./src/theme/*",
           "scss/*": "./src/scss/*"

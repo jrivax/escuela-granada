@@ -30,7 +30,7 @@ const Topbar = ({
         <Hidden mdUp>
           <Box marginRight={{ xs: 1, sm: 2 }}>
             <IconButton onClick={onSidebarOpen} aria-label="Menu">
-              <MenuIcon />
+              {/* <MenuIcon /> */}
             </IconButton>
           </Box>
         </Hidden>
@@ -44,7 +44,7 @@ const Topbar = ({
           height={{ xs: 28, md: 32 }}
           width={45}
         >
-          <WebbeeLogo height={'100%'} width={'100%'} />
+          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
         </Box>
       </Box>
       <Box display="flex" alignItems={'center'}>
@@ -133,7 +133,7 @@ const Topbar = ({
               Home
             </Link>
           </Box>
-          <Box>
+          {/* <Box>
             <Button
               variant="contained"
               color="primary"
@@ -144,7 +144,7 @@ const Topbar = ({
             >
               Purchase now
             </Button>
-          </Box>
+          </Box> */}
         </Hidden>
       </Box>
     </Box>

@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import WebbeeLogo from 'svg/logos/Webbee';
 import paletteTypes from 'common/paletteTypes';
+import logo from 'img/logo_esg_granada_green.png';
 
 const Topbar = ({
   themeMode,
@@ -27,11 +28,11 @@ const Topbar = ({
       width={'100%'}
     >
       <Box display={'flex'} alignItems={'center'}>
-        <Box marginRight={{ xs: 1, sm: 2 }}>
+        {/* <Box marginRight={{ xs: 1, sm: 2 }}>
           <IconButton onClick={onSidebarOpen} aria-label="Menu">
             <MenuIcon />
           </IconButton>
-        </Box>
+        </Box> */}
         <Box
           display={'flex'}
           alignItems="baseline"
@@ -39,10 +40,11 @@ const Topbar = ({
           underline="none"
           href="/"
           title="webbee"
-          height={{ xs: 28, md: 32 }}
+          height={{ xs: 28, md: 45 }}
           width={45}
         >
-          <WebbeeLogo height={'100%'} width={'100%'} />
+          <img src={logo} alt={'logo'} height={'100%'} width={'100%'} />
+          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
         </Box>
       </Box>
       <Box display="flex" alignItems={'center'}>
