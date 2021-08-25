@@ -11,6 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import WebbeeLogo from 'svg/logos/Webbee';
 import paletteTypes from 'common/paletteTypes';
 import logo from 'img/logo_esg_granada_green.png';
+import logoEscuelaGranada from 'img/logo_escuela_granada_verde.png';
 
 const Topbar = ({
   themeMode,
@@ -44,6 +45,19 @@ const Topbar = ({
           width={45}
         >
           <img src={logo} alt={'logo'} height={'100%'} width={'100%'} />
+          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+        </Box>
+        <Box
+          display={'flex'}
+          alignItems="baseline"
+          component="a"
+          underline="none"
+          href="/"
+          title="webbee"
+          height={{ xs: 28, md: 45 }}
+          width={110}
+        >
+          <img src={logoEscuelaGranada} alt={'logoEscuelaGranada'} height={'100%'} width={'100%'} />
           {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
         </Box>
       </Box>

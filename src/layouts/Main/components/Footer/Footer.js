@@ -6,6 +6,8 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import WebbeeLogo from 'svg/logos/Webbee';
 import logo from 'img/logo_esg_granada_green.png';
+import logoEscuelaGranada from 'img/logo_escuela_granada_verde.png';
+
 const Footer = () => (
   <Grid container spacing={2}>
     <Grid item xs={12}>
@@ -16,17 +18,32 @@ const Footer = () => (
         width={'100%'}
         flexDirection={{ xs: 'column', sm: 'row' }}
       >
-        <Box
-          display={'flex'}
-          component="a"
-          underline="none"
-          href="/"
-          title="webbee"
-          height={55}
-          width={55}
-        >
-          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
-          <img src={logo} alt={'logo'} height={'100%'} width={'100%'} />
+        <Box display={'flex'} alignItems={'center'}>
+          <Box
+            display={'flex'}
+            component="a"
+            underline="none"
+            href="/"
+            title="webbee"
+            height={55}
+            width={55}
+          >
+            {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+            <img src={logo} alt={'logo'} height={'100%'} width={'100%'} />
+          </Box>
+          <Box
+            display={'flex'}
+            alignItems="baseline"
+            component="a"
+            underline="none"
+            href="/"
+            title="webbee"
+            height={55}
+            width={110}
+          >
+            <img src={logoEscuelaGranada} alt={'logoEscuelaGranada'} height={'100%'} width={'100%'} />
+            {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+          </Box>
         </Box>
         <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
           <Box marginTop={1} marginRight={2}>
