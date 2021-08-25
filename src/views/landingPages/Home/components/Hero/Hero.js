@@ -92,7 +92,7 @@ const Hero = () => {
           </Box> */}
         </Box>
       </Grid>
-      <Grid item xs={12} md={4}>
+      {/* <Grid item xs={12} md={4}>
         <Box
           height={'100%'}
           width={'100%'}
@@ -104,7 +104,7 @@ const Hero = () => {
             <RocketIllustration width={'100%'} height={'100%'} />
           </Box>
         </Box>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };
