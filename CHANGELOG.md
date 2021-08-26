@@ -1,8 +1,24 @@
 # Change Log
 
+## [1.2.1] 2021-08-18
+### Added
+### Bug fixing
+### Major style changes
+    Add background image with green layer with transparency
+    Add Escuela granada logos
+    Style hero view a little bit.
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+```
+### Warning
+
 ## [1.2.0] 2021-08-18
 ### Added
-Change of library, techs and styles
+    Change of library, techs and styles
 ### Bug fixing
 ### Major style changes
 ### Deleted components
