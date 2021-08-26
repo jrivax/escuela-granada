@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Typed from 'react-typed';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme, alpha } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
@@ -24,19 +24,23 @@ const Hero = () => {
           marginRight={2}>
             <Typography
               variant="h2"
-              color="textPrimary"
+              //color="textThird"
               sx={{
                 fontWeight: 700,
+                color: theme.palette.primary.main
               }}
             >
               Enseñamos{' '}
               <Typography
-                color={'primary'}
+                //color={'primary'}
+                sx={{
+                  color: theme.palette.secondaryText.primary
+                }}
                 component={'span'}
                 variant={'inherit'}
               >
                 <Typed
-                  strings={['relajación.', 'conocimiento.', 'salud.']}
+                  strings={['relajación', 'conocimiento', 'salud']}
                   typeSpeed={60}
                   loop={true}
                 />
@@ -47,8 +51,11 @@ const Hero = () => {
             <Typography
               variant="h6"
               component="p"
-              color="textSecondary"
-              sx={{ fontWeight: 400 }}
+              //color="textSecondary"
+              sx={{ 
+                color: alpha(theme.palette.secondaryText.primary, .9),
+                fontWeight: 400 
+              }}
             >
               Nuestra base de trabajo es que la salud se puede aprender y cultivar. 
               Sólo hace falta intención de cambio, buenas técnicas y entrenamiento. Se puede aprender a positivar, 

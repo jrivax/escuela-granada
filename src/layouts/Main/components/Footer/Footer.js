@@ -39,7 +39,7 @@ const Footer = () => (
             href="/"
             title="webbee"
             height={55}
-            width={110}
+            width={140}
           >
             <img src={logoEscuelaGranada} alt={'logoEscuelaGranada'} height={'100%'} width={'100%'} />
             {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}

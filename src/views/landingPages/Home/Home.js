@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme, alpha } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Container from 'common/Container';
 import { DemoPages, Features, Footer, Hero, Highlights } from './components';
@@ -20,7 +20,7 @@ const Home = () => {
         position={'relative'}
         sx={{
           backgroundImage:
-            'url(backgroundImage)',
+            `url(${backgroundImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
           backgroundAttachment: 'fixed',
@@ -34,7 +34,7 @@ const Home = () => {
             width: '100%',
             content: '" "',
             zIndex: 1,
-            backgroundColor: theme.palette.primary.dark,
+            backgroundColor: alpha(theme.palette.primary.main, .3),
             backgroundAttachment: 'fixed',
             opacity: 0.7,
           },

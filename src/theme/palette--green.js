@@ -28,6 +28,9 @@ export const light = {
     level2: '#f5f5f5',
     level1: '#fff',
   },
+  secondaryText: {
+    primary: '#EEEEEF'
+  }
 };
 
 export const dark = {
