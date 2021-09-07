@@ -14,6 +14,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import { colors } from '@material-ui/core';
 
+import GroupIcon from '@material-ui/icons/Group';
+import PersonIcon from '@material-ui/icons/Person';
+import DeviceHubIcon from '@material-ui/icons/DeviceHub';
+
 const Overview = ({ themeMode = 'light' }) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -32,89 +36,53 @@ const Overview = ({ themeMode = 'light' }) => {
           Centro de Psicoterapia Médica y de Terapia Holística
         </Box>
         <Typography align={'center'} color="textSecondary" variant={'subtitle1'}>
-        Fundado en el año 1985 (por el Dr. Eugenio Herrero Lozano y el Dr. Julio Herrero Lozano entre otros profesionales) y constituido por un equipo multidisciplinar de profesionales (médicos, psicólogos, psiquiatras y fisioterapeutas).
-          <br />
-          Entendemos la salud holísticamente, de una forma integral y, por eso, trabajamos con el cuerpo, la mente (emociones-pensamiento) y el espíritu, buscando el equilibrio y las respuestas en el interior de uno mismo (a través del trabajo Psicoterapéutico).
+          Fundado en el año 1985 (por el Dr. Eugenio Herrero Lozano y el Dr. Julio Herrero Lozano entre otros profesionales) y constituido por un equipo multidisciplinar de profesionales (médicos, psicólogos, psiquiatras y fisioterapeutas).
         </Typography>
       </Box>
       <Grid container spacing={isMd ? 8 : 4}>
         {[
           {
             title: 'Base de trabajo',
-            subtitle:
-              'Nuestra base de trabajo es que la salud se puede aprender y cultivar. Sólo hace falta intención de cambio, buenas técnicas y entrenamiento. Se puede aprender a positivar, a disfrutar, a querese uno mismo, a relacionarse, a sanar y siempre mejorar.',
+            subtitle: 'Entendemos la salud holísticamente, de una forma integral y, por eso, trabajamos con el cuerpo, la mente (emociones-pensamiento) y el espíritu, buscando el equilibrio y las respuestas en el interior de uno mismo (a través del trabajo Psicoterapéutico).',
+            explanation: 'Impartimos cursos de formación y entrenamiento en diversas técnicas psicoterapéuticas que utilizamos para generar equilibrio en el interior del ser humano.',
             icon: (
-              <svg
-                width={32}
-                height={32}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <DeviceHubIcon />
             ),
             color: colors.blueGrey,
             lessons: [
-              'Lesson 1: Doloremque laudantium, totam error.',
-              'Lesson 2: Natus error sit voluptatem',
-              'Lesson 3: Totam rem aperiam, eaque ipsa.',
-              'Lesson 4: Accusantium doloremque laudantium, totam rem',
             ],
           },
           {
-            title: 'Funnel Optimization',
-            subtitle:
-              'We help you optimize your website or mobile app flow to increase conversion rates and retention to drive growth.',
+            title: 'Terapia individual',
+            subtitle: 'gergqegqe',
+            explanation: [
+              'Se abordan de forma individualizada trastornos derivados del desequilibrio emocional y mental que generan problemas como ansiedad, depresión, estrés, ira y sus manifestaciones tanto en nuestro cuerpo como en el entorno.',
+              'Los trastornos más habituales son:',
+            ],
             icon: (
-              <svg
-                width={32}
-                height={32}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                />
-              </svg>
+              <PersonIcon />
             ),
             color: colors.lightBlue,
             lessons: [
-              'Lesson 1: Doloremque laudantium, totam error.',
-              'Lesson 2: Natus error sit voluptatem',
-              'Lesson 3: Totam rem aperiam, eaque ipsa.',
-              'Lesson 4: Accusantium doloremque laudantium, totam rem',
+              'Ansiedad y estrés.',
+              'Depresión.',
+              'Fobias.',
+              'Obsesiones.',
+              'Problemas en las relaciones sociales.',
+              'Disfunciones sexuales.',
+              'Alcohoslimo, tabaquismo y conductas adictivas.',
+              'Enfermedades psicosomáticas.'
             ],
           },
           {
-            title: 'Idea Creation',
-            subtitle:
-              'We meet with your team to know more about your project idea and goals.',
+            title: 'Terapia grupal',
+            subtitle: [
+              'Los grupos de apoyo emocional son estructuras de trabajo para personas interesadas en crecer hacia el bienestar emocional',
+              'Se realizan en grupos de 6 a 12 personas que se reúnen periódicamente, acompañados de terapeutas expertos en técnicas de apoyo emocional.',
+              'De este modo se consolidan y se practican las herramientas aprendidas en los diferentes cursos impartidos en este centro.'
+            ],
             icon: (
-              <svg
-                width={32}
-                height={32}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                />
-              </svg>
+              <GroupIcon />
             ),
             color: colors.pink,
             lessons: [
@@ -149,8 +117,8 @@ const Overview = ({ themeMode = 'light' }) => {
                   <CardContent>
                     <Box
                       component={Avatar}
-                      width={60}
-                      height={60}
+                      width={50}
+                      height={50}
                       marginBottom={6}
                       bgcolor={item.color[themeMode === 'light' ? 900 : 50]}
                       boxShadow={4}
@@ -167,9 +135,33 @@ const Overview = ({ themeMode = 'light' }) => {
                     >
                       {item.title}
                     </Box>
-                    <Typography color="text.secondary">
-                      {item.subtitle}
-                    </Typography>
+
+                    <Grid container spacing={2}>
+                      {(i === 0 || i === 2) ? (
+                        Array.isArray(item.subtitle) ? item.subtitle.map((oneSb, z) => (
+                          <Grid item>
+                            <Typography key={z} color="text.secondary">
+                              {oneSb}
+                            </Typography>
+                          </Grid>
+                        )) :
+                          <Grid item>
+                            {item.subtitle}
+                          </Grid>
+                      ) : (
+                        Array.isArray(item.explanation) ? item.explanation.map((oneEx, z) => (
+                          <Grid item>
+                            <Typography key={z} color="text.secondary">
+                              {oneEx}
+                            </Typography>
+                          </Grid>
+                        )) :
+                          <Grid item>
+                            {item.explanation}
+                          </Grid>
+                      )
+                      }
+                    </Grid>
                   </CardContent>
                 </Box>
               </Grid>
@@ -195,9 +187,33 @@ const Overview = ({ themeMode = 'light' }) => {
                     >
                       {item.title}
                     </Box>
-                    <Typography color="text.secondary">
-                      {item.subtitle}
-                    </Typography>
+                    <Grid container spacing={2}>
+                      {(i === 0 || i === 2) ? (
+                        Array.isArray(item.explanation) ? item.explanation.map((oneEx, z) => (
+                          <Grid item>
+                            <Typography key={z} color="text.secondary">
+                              {oneEx}
+                            </Typography>
+                          </Grid>
+                        )) :
+                          <Grid item>
+                            {item.explanation}
+                          </Grid>
+
+                      ) : (
+                        Array.isArray(item.explanation) ? item.explanation.map((oneSb, z) => (
+                          <Grid item>
+                            <Typography key={z} color="text.secondary">
+                              {oneSb}
+                            </Typography>
+                          </Grid>
+                        )) :
+                          <Grid item>
+                            {item.explanation}
+                          </Grid>
+                      )
+                      }
+                    </Grid>
                   </Box>
                   <Grid container spacing={1}>
                     {item.lessons.map((lesson, j) => (
