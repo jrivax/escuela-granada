@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.3.0] 2021-08-18
+### Added
+### Bug fixing
+### Major style changes
+### Deleted components
+### Added components
+    Add overview component to landingpage.
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+```
+### Warning
+
 ## [1.2.1] 2021-08-18
 ### Added
 ### Bug fixing
