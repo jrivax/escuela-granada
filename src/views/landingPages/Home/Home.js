@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme, alpha } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Container from 'common/Container';
-import { DemoPages, Features, Footer, Hero, Highlights, Overview } from './components';
+import { DemoPages, Features, Footer, Hero, Highlights, Overview, Professionals } from './components';
 import backgroundImage from 'img/camino_salud_2.jpg';
 
 const Home = ({ themeMode = 'light' }) => {
@@ -58,6 +58,11 @@ const Home = ({ themeMode = 'light' }) => {
       <Box>
         <Container>
           <Overview themeMode={themeMode} />
+        </Container>
+      </Box>
+      <Box bgcolor={theme.palette.alternate.main}>
+        <Container>
+          <Professionals />
         </Container>
       </Box>
     </Box>
