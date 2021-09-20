@@ -62,7 +62,7 @@ const Topbar = ({
         </Box>
       </Box>
       <Box display="flex" alignItems={'center'}>
-        <Box
+        {/* <Box
           display={'flex'}
           padding={1}
           borderRadius={8}
@@ -140,11 +140,11 @@ const Topbar = ({
               </svg>
             )}
           </IconButton>
-        </Box>
-        <Hidden mdDown>
+        </Box> */}
+        <Hidden mdDown> 
           <Box>
             <Link underline="none" component="a" href="/" color="textPrimary">
-              Home
+              Inicio
             </Link>
           </Box>
           <Box marginX={2}>
@@ -154,10 +154,10 @@ const Topbar = ({
               href="/docs-introduction"
               color="textPrimary"
             >
-              Documentation
+              Sobre nosotros
             </Link>
           </Box>
-          <Box>
+          {/* <Box>
             <Button
               variant="contained"
               color="primary"
@@ -168,7 +168,7 @@ const Topbar = ({
             >
               Purchase now
             </Button>
-          </Box>
+          </Box> */}
         </Hidden>
       </Box>
     </Box>

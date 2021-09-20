@@ -68,7 +68,7 @@ const Footer = () => (
               Documentation
             </Link>
           </Box>
-          <Box marginTop={1}>
+          {/* <Box marginTop={1}>
             <Button
               variant="outlined"
               color="primary"
@@ -79,7 +79,7 @@ const Footer = () => (
             >
               Purchase now
             </Button>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </Grid>
@@ -90,7 +90,7 @@ const Footer = () => (
         color="textSecondary"
         gutterBottom
       >
-        &copy; Webbee. 2021, Maccarian. All rights reserved
+        &copy; Escuela Granada. 2012. Todos los derechos reservados.
       </Typography>
       <Typography
         align={'center'}
@@ -98,10 +98,10 @@ const Footer = () => (
         color="textSecondary"
         component={'p'}
       >
-        When you visit or interact with our sites, services or tools, we or our
-        authorised service providers may use cookies for storing information to
-        help provide you with a better, faster and safer experience and for
-        marketing purposes.
+        Cuando usted visita o interactúa con nuestro sitio, servicio o herramienta, nosotros o nuestros
+        proveedores de servicios autorizados pueden utilizar cookies para almacenar información para
+        ayudar a proporcionarle una experiencia mejor, más rápida y más segura y para
+        fines de marketing.
       </Typography>
     </Grid>
   </Grid>
