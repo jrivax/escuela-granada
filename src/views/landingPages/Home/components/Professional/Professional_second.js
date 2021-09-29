@@ -18,9 +18,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import julioHerrero from 'img/faces/julioHerrero.jpg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
 
-const Professionals = (props) => {
+const Professionals_two = () => {
   const theme = useTheme();
   const isXs = useMediaQuery(theme.breakpoints.up('xs'), {
     defaultMatches: true,
@@ -58,12 +57,6 @@ const Professionals = (props) => {
     arrows: false,
     autoplay: true,
   };
-
-  const handleClick = () => {
-    debugger;
-    props.history.push('/');
-  }
-
   return (
     <Box>
       <Box marginBottom={4}>
@@ -87,44 +80,14 @@ const Professionals = (props) => {
         </Typography>
       </Box>
       <Box>
-        <Slider {...sliderOpts} >
-          {/* <Grid container spacing={2}> */}
+        {/* <Slider {...sliderOpts} > */}
+          <Grid container spacing={2}>
           {[
             {
               name: 'Dr. Julio Herrero Lozano',
               title: 'Médico Psiquiatra. Psicoterapeuta.',
               avatar: `${julioHerrero}`,
-            },
-            {
-              name: 'Dña. Clara Giménez del Olmo',
-              title: 'Psicólogo Psicoterapeuta',
-              avatar: `${girl}`,
-            },
-            {
-              name: 'Dra. María Herrero Martín',
-              title: 'Médico Psicólogo. Psicoterapeuta',
-              avatar: `${girl}`,
-            },
-            {
-              name: 'Guadalupe Mena Rodriguez',
-              title: 'Psicólogo Psicoterapeuta',
-              avatar: `${girl}`,
             }
-            // {
-            //   name: 'Guadalupe Mena Rodriguez',
-            //   title: 'Psicólogo Psicoterapeuta',
-            //   avatar: `${girl}`,
-            // },
-            // {
-            //   name: 'Guadalupe Mena Rodriguez',
-            //   title: 'Psicólogo Psicoterapeuta',
-            //   avatar: `${girl}`,
-            // },
-            // {
-            //   name: 'Guadalupe Mena Rodriguez',
-            //   title: 'Psicólogo Psicoterapeuta',
-            //   avatar: `${girl}`,
-            // },
           ].map((item, i) => (
             // <Grid item xs={12} sm={6} md={3} key={i} data-aos={'fade-up'}>
             <Box component={Card} boxShadow={0} bgcolor={'transparent'}>
@@ -157,15 +120,7 @@ const Professionals = (props) => {
                       </Grid>
                       <Grid item>
                         <Box component={CardActions} justifyContent={'flex-end'}>
-                          {/* <Button size="small" onClick={() => handleClick()}>Conoce más</Button> */}
-                          <Link
-                            component={'a'}
-                            color={'primary'}
-                            href={'/professional-view'}
-                            underline={'none'}
-                          >
-                            Sign up here.
-                          </Link>
+                          <Button size="small">Conoce más</Button>
                         </Box>
                       </Grid>
                     </Grid>
@@ -175,11 +130,11 @@ const Professionals = (props) => {
             </Box>
             // </Grid>
           ))}
-          {/* </Grid> */}
-        </Slider>
+          </Grid>
+        {/* </Slider> */}
       </Box>
     </Box>
   );
 };
 
-export default Professionals;
+export default Professionals_two;

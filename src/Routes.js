@@ -10,8 +10,12 @@ import {
 
 // Landing pages
 import {
-  Home as HomeView
+  Home as HomeView,
+  Software as SoftwareView
 } from 'views/landingPages';
+import {
+  Professional as ProfessionalView
+} from 'views/landingPages/Home/components';
 
 
 const Routes = () => {
@@ -24,6 +28,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={HomeView}
+            layout={MainLayout}
+          />
+        )}
+      />
+      <Route
+        exact
+        path="/professional-view"
+        render={(matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={ProfessionalView}
             layout={MainLayout}
           />
         )}

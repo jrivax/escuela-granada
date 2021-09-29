@@ -66,6 +66,9 @@ module.exports = (env, { mode }) => ({
     poll: true,
     ignored: '/node_modules/',
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       javascriptRules,
