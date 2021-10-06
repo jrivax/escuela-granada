@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import WithLayout from 'WithLayout';
 // Available layouts
 import {
@@ -20,30 +20,27 @@ import {
 
 const Routes = () => {
   return (
-    <Switch>
-      <Route
-        exact
-        path="/"
-        render={(matchProps) => (
+    <Router>
+      <Switch>
+        <Route
+          exact
+          path="/"
+        >
           <WithLayout
-            {...matchProps}
             component={HomeView}
             layout={MainLayout}
           />
-        )}
-      />
-      <Route
-        exact
-        path="/professional-view"
-        render={(matchProps) => (
-          <WithLayout
-            {...matchProps}
+        </Route>
+        <Route
+          exact
+          path="/professional-view"
+        ><WithLayout
             component={ProfessionalView}
             layout={MainLayout}
           />
-        )}
-      />
-    </Switch>
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 

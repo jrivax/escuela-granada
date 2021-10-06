@@ -16,9 +16,12 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
 import julioHerrero from 'img/faces/julioHerrero.jpg';
+import maria from 'img/faces/maria.jpeg';
+import clara from 'img/faces/clara_dos.png';
+import guadalupe from 'img/faces/guadalupe.jpeg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
 
 const Professionals = (props) => {
   const theme = useTheme();
@@ -60,7 +63,6 @@ const Professionals = (props) => {
   };
 
   const handleClick = () => {
-    debugger;
     props.history.push('/');
   }
 
@@ -94,21 +96,26 @@ const Professionals = (props) => {
               name: 'Dr. Julio Herrero Lozano',
               title: 'Médico Psiquiatra. Psicoterapeuta.',
               avatar: `${julioHerrero}`,
+              description: ['Cursó sus estudios de Medicina hasta licenciarse en el año 1972 en la Universidad Complutense de Madrid, desarrollando su actividad como médico de familia e internista en el Hospital Clínico San Carlos.'
+                , 'En 1975 se especializó en Psiquiatría, ejerciendo como médico psiquiatra y psicoterapeuta desde entonces.'
+                , 'Médico del Ayuntamiento de Madrid desde 1974, ocupó la plaza de Psiquiatría de la Beneficencia Municipal desde 1980 hasta la desaparición de la misma en 1993 y, desde entonces, desarrolla su actividad en el ámbito individual y de grupo, impartiendo cursos de Entrenamiento en Relajación Creativa y Habilidades Emocionales así como grupos de Apoyo Emocional para los distintos Programas Municipales (Funcionarios, Menopausia, Obesidad, Pacientes Seropositivos, etc.)'
+                , 'Miembro Fundador del centro de Psicoterapia Médica Escuela Granda en Madrid donde ejerce como Psiquiatra y Psicoterapeuta.'
+                , 'Ganador del lV premio Madrid Previene por el proyecto: “Evaluación de los resultados obtenidos tras la aplicación a población de alto riesgo emocional del proyecto G.E.R.C.H.E. para la prevención en Salud Laboral de la Policía Municipal”']
             },
             {
               name: 'Dña. Clara Giménez del Olmo',
               title: 'Psicólogo Psicoterapeuta',
-              avatar: `${girl}`,
+              avatar: `${clara}`,
             },
             {
               name: 'Dra. María Herrero Martín',
               title: 'Médico Psicólogo. Psicoterapeuta',
-              avatar: `${girl}`,
+              avatar: `${maria}`,
             },
             {
               name: 'Guadalupe Mena Rodriguez',
               title: 'Psicólogo Psicoterapeuta',
-              avatar: `${girl}`,
+              avatar: `${guadalupe}`,
             }
             // {
             //   name: 'Guadalupe Mena Rodriguez',
@@ -127,7 +134,7 @@ const Professionals = (props) => {
             // },
           ].map((item, i) => (
             // <Grid item xs={12} sm={6} md={3} key={i} data-aos={'fade-up'}>
-            <Box component={Card} boxShadow={0} bgcolor={'transparent'}>
+            <Box component={Card} padding={2} boxShadow={0} bgcolor={'transparent'}>
               <Box
                 component={CardMedia}
                 borderRadius={2}
@@ -158,14 +165,21 @@ const Professionals = (props) => {
                       <Grid item>
                         <Box component={CardActions} justifyContent={'flex-end'}>
                           {/* <Button size="small" onClick={() => handleClick()}>Conoce más</Button> */}
-                          <Link
+                          {/* <Link
                             component={'a'}
                             color={'primary'}
                             href={'/professional-view'}
                             underline={'none'}
+                            state={{ description: 'occupation' }}
                           >
                             Sign up here.
-                          </Link>
+                          </Link> */}
+                          <Link to={{
+                            pathname: '/professional-view',
+                            state: {
+                              professional: item
+                            }
+                          }}>Sign up here</Link>
                         </Box>
                       </Grid>
                     </Grid>
