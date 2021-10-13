@@ -1,8 +1,8 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import TextField from '@mui/material/TextField';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 const Subscription = () => {
   return (

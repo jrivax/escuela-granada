@@ -1,13 +1,13 @@
 import React from 'react';
-import { alpha, useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
-import { colors } from '@material-ui/core';
+import { alpha, useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Avatar from '@mui/material/Avatar';
+import { colors } from '@mui/material';
 
 const WhatWeDo = () => {
   const theme = useTheme();

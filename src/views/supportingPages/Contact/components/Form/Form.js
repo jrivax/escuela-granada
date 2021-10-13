@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Box from '@material-ui/core/Box';
-import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Box } from '@mui/system';
+import Card from '@mui/material/Card';
+import { Button } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
 
 const Form = () => {
   const theme = useTheme();

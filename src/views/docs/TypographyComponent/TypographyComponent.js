@@ -2,14 +2,14 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { useTheme } from '@material-ui/core/styles';
-import { colors } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import { useTheme } from '@mui/material/styles';
+import { colors } from '@mui/material';
+import Link from '@mui/material/Link';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import Container from 'common/Container';
 
 const TypographyComponent = () => {

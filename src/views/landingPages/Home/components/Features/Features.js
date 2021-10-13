@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { useTheme } from '@mui/material';
+import { Box } from '@mui/system';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import Avatar from '@mui/material/Avatar';
+import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
 
 const Features = () => {

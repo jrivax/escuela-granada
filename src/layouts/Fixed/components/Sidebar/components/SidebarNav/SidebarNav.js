@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { alpha, useTheme } from '@material-ui/core/styles';
-import Hidden from '@material-ui/core/Hidden';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import CloseIcon from '@material-ui/icons/Close';
+import { alpha, useTheme } from '@mui/material/styles';
+import Hidden from '@mui/material/Hidden';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import CloseIcon from '@mui/icons-material/Close';
 
 const SidebarNav = ({ pages, onClose }) => {
   const theme = useTheme();

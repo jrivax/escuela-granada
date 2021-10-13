@@ -1,13 +1,13 @@
 import React from 'react';
 import Typed from 'react-typed';
-import { useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Typography from '@material-ui/core/Typography';
-import { colors } from '@material-ui/core';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { useTheme } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Typography from '@mui/material/Typography';
+import { colors } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Hero = () => {
   const theme = useTheme();

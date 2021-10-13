@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
-import { useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 const About = () => {
   const theme = useTheme();

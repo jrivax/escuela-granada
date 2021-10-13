@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Box } from '@mui/system';
+import Grid from '@mui/material/Grid';
 import { Map, Form, Faq } from './components';
 import Container from 'common/Container';
 

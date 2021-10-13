@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
 
 const Headline = () => {
   const theme = useTheme();

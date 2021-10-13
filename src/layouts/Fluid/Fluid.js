@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
+import AppBar from '@mui/material/AppBar';
 import { Topbar, Sidebar, Footer } from './components';
 import Container from 'common/Container';
 import { pages } from '../navigation';

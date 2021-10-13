@@ -1,11 +1,11 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
+import { useTheme } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
 
 const Footer = () => {
   const theme = useTheme();

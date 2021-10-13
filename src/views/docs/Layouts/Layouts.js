@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { alpha, useTheme } from '@material-ui/core/styles';
-import { colors } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
+import { colors } from '@mui/material';
+import Link from '@mui/material/Link';
+import Grid from '@mui/material/Grid';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
 import Container from 'common/Container';
 import LayoutFluidIllustration from 'svg/illustrations/LayoutFluid';
 import LayoutFixedIllustration from 'svg/illustrations/LayoutFixed';

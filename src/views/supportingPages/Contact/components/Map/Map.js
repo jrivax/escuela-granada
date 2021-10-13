@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 const Map = ({ themeMode = 'light' }) => {
   return (

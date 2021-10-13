@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Box from '@material-ui/core/Box';
-import Hidden from '@material-ui/core/Hidden';
+import { Box } from '@mui/system';
+import Hidden from '@mui/material/Hidden';
 import Container from 'common/Container';
 import { Sidebar, Form } from './components';
 

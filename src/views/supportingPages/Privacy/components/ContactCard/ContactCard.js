@@ -1,8 +1,8 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
+import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
 
 const ContactCard = () => {
   const theme = useTheme();

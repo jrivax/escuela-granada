@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Drawer from '@material-ui/core/Drawer';
-import Box from '@material-ui/core/Box';
+import Drawer from '@mui/material/Drawer';
+import { Box } from '@mui/system';
 import { SidebarNav } from './components';
 
 const Sidebar = (props) => {

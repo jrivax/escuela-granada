@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@material-ui/core/styles';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Divider from '@material-ui/core/Divider';
-import AppBar from '@material-ui/core/AppBar';
-import Box from '@material-ui/core/Box';
-import Slide from '@material-ui/core/Slide';
+import { useTheme } from '@mui/material/styles';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import Divider from '@mui/material/Divider';
+import AppBar from '@mui/material/AppBar';
+import { Box } from '@mui/system';
+import Slide from '@mui/material/Slide';
 import { Topbar, Sidebar, Footer } from './components';
 import Container from 'common/Container';
 import { pages } from '../navigation';

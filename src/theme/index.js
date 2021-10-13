@@ -1,4 +1,4 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core';
+import { createMuiTheme, responsiveFontSizes } from '@mui/material';
 import shadows from './shadows';
 import palette from './palette';
 

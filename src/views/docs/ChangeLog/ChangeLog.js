@@ -1,7 +1,7 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
 import Container from 'common/Container';
 
 const BlockItem = ({ versionTitle, date, list }) => (

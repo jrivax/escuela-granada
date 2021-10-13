@@ -1,6 +1,6 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
+import { Box } from '@mui/system';
+import Divider from '@mui/material/Divider';
 import Container from 'common/Container';
 import { Gallery, Headline, Numbers, Story, Team } from './components';
 

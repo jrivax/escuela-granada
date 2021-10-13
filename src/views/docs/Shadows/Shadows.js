@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import { colors } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import { useTheme } from '@mui/material/styles';
+import { colors } from '@mui/material';
+import Link from '@mui/material/Link';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
 import Container from 'common/Container';
 
 const Shadows = () => {

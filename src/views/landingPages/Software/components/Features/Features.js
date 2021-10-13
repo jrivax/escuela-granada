@@ -1,12 +1,13 @@
 import React from 'react';
-import { alpha, useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Avatar from '@material-ui/core/Avatar';
-import Grid from '@material-ui/core/Grid';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import { alpha, useTheme } from '@mui/material/styles';
+// import { Button } from '@mui/material';
+// import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import { Box } from '@mui/system';
+import { Avatar, Button } from '@mui/material';
 
 const Features = () => {
   const theme = useTheme();

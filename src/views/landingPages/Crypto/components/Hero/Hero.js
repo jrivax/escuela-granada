@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Hidden from '@material-ui/core/Hidden';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Grid from '@material-ui/core/Grid';
-import { colors } from '@material-ui/core';
+import { useTheme } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Hidden from '@mui/material/Hidden';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid';
+import { colors } from '@mui/material';
 
 const Hero = () => {
   const theme = useTheme();

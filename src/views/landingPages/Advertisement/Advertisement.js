@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
+import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
 import Container from 'common/Container';
 import {
   Hero,

@@ -4,14 +4,14 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { colors } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import { colors } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import Link from '@mui/material/Link';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import Container from 'common/Container';
 import Chart1 from 'svg/illustrations/Chart1';
 import Chart2 from 'svg/illustrations/Chart2';
@@ -73,7 +73,7 @@ const Illustrations = () => {
             React components. Form example:
           </Typography>
           <Box marginY={2}>
-            {renderCodeBlock(`import Box from '@material-ui/core/Box';
+            {renderCodeBlock(`import { Box } from '@mui/system';
 import CreditCardsIllustration from 'svg/illustrations/CreditCards';
 
 <Box height={'100%'} width={'100%'} maxWidth={600}>

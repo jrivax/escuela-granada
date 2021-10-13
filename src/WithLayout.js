@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import CssBaseline from '@mui/material/CssBaseline';
 import getTheme from 'theme';
 import palettes from 'common/paletteTypes';
 import AOS from 'aos';

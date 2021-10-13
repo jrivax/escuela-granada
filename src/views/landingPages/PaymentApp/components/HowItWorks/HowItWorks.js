@@ -1,9 +1,9 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid';
 
 const HowItWorks = () => {
   const theme = useTheme();

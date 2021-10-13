@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@material-ui/core';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import AppBar from '@material-ui/core/AppBar';
+import { useTheme } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Box } from '@mui/system';
+import Divider from '@mui/material/Divider';
+import AppBar from '@mui/material/AppBar';
 import Container from 'common/Container';
 import { Topbar, Sidebar, Footer } from './components';
 import { pages } from '../navigation--docs';

@@ -1,13 +1,13 @@
 import React from 'react';
 import Typed from 'react-typed';
-import { useTheme } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@mui/material/styles';
+import TextField from '@mui/material/TextField';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
 import CloudHostingIllustration from 'svg/illustrations/CloudHosting';
 
 const Hero = () => {

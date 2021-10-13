@@ -1,16 +1,16 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import Box from '@material-ui/core/Box';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Grid from '@material-ui/core/Grid';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import { useTheme } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import { Box } from '@mui/system';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import List from '@mui/material/List';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
 
 const About = () => {
   const theme = useTheme();

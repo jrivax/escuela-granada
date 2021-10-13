@@ -2,11 +2,11 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { useTheme } from '@material-ui/core/styles';
-import { colors } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import { useTheme } from '@mui/material/styles';
+import { colors } from '@mui/material';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 import Container from 'common/Container';
 
 const QuickStart = () => {

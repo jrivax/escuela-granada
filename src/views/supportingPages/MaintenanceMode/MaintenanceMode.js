@@ -1,8 +1,8 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import Container from 'common/Container';
 import CloudHostingIllustration from 'svg/illustrations/CloudHosting';
 

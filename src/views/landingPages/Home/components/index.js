@@ -6,3 +6,4 @@ export { default as Professionals } from './Professionals';
 export { default as Professional } from './Professional';
 export { default as Hero } from './Hero';
 export { default as Highlights } from './Highlights';
+export { default as Contact } from './Contact'

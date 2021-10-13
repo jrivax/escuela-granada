@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import Link from '@mui/material/Link';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
 import Container from 'common/Container';
 
 const Plugins = () => {

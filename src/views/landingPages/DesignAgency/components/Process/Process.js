@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
-import { useTheme } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import Box from '@material-ui/core/Box';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-import Grid from '@material-ui/core/Grid';
-import { colors } from '@material-ui/core';
+import { useTheme } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import { Box } from '@mui/system';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid';
+import { colors } from '@mui/material';
 
 const Process = ({ themeMode = 'light' }) => {
   const theme = useTheme();

@@ -1,9 +1,9 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
+import Grid from '@mui/material/Grid';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 import WebbeeLogo from 'svg/logos/Webbee';
 import logo from 'img/logo_esg_granada.png';
 

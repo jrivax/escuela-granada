@@ -1,11 +1,11 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import { useTheme } from '@mui/material/styles';
+import Link from '@mui/material/Link';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import Container from 'common/Container';
 import GlobeIllustration from 'svg/illustrations/Globe';
 

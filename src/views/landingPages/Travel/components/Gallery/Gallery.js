@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import Carousel, { Modal, ModalGateway } from 'react-images';
-import { useTheme } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
-import Card from '@material-ui/core/Card';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Button from '@material-ui/core/Button';
+import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import CardMedia from '@mui/material/CardMedia';
+import Card from '@mui/material/Card';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { Button } from '@mui/material';
 
 const photos = [
   {

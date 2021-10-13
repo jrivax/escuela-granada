@@ -2,11 +2,11 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { alpha, useTheme } from '@material-ui/core/styles';
-import { colors } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
+import { colors } from '@mui/material';
+import Link from '@mui/material/Link';
+import { Box } from '@mui/system';
+import Typography from '@mui/material/Typography';
 import Container from 'common/Container';
 
 const ContainerComponent = () => {
@@ -53,7 +53,7 @@ const ContainerComponent = () => {
           <Box>
             {renderCodeBlock(`import React from 'react';
 import PropTypes from 'prop-types';
-import Box from '@material-ui/core/Box';
+import { Box } from '@mui/system';
 
 const Container = ({ children, ...rest }) => (
   <Box

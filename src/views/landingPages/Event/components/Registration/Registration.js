@@ -1,9 +1,9 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { useTheme } from '@mui/material/styles';
+import TextField from '@mui/material/TextField';
+import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 const Registration = () => {
   const theme = useTheme();
