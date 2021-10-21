@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -14,20 +15,32 @@ const Form = () => {
   const [secondName, setSecondName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [captchaValue, setCaptchaValue] = useState("");
   const [open, setOpen] = useState(false);
   const [severity, setSeverity] = useState("info");
 
+  useEffect(() => {
+    setFirstName('');
+    setSecondName('');
+    setEmail('');
+    setMessage('');
+    setCaptchaValue('');
+  }, [open]);
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true
   });
 
+  const sendEmail = (captchaValue) => {
+    setCaptchaValue(captchaValue);
+  };
   const handleSubmitContactForm = (e) => {
     e.preventDefault();
     const templateEmail = {
       from_name: firstName || "Sin indicar",
       from_surname: secondName || "Sin indicar",
       form_message: message || "Sin indicar",
-      form_email: email || "Sin indicar"
+      form_email: email || "Sin indicar",
+      'g-recaptcha-response': captchaValue,
     }
     try {
       emailjs.send("service_9i6x61m", "template_3n8vlpm", templateEmail, 'user_4zicAFLBjHELQFusN96Dj')
@@ -105,17 +118,31 @@ const Form = () => {
                 onChange={e => setMessage(e.target.value)}
               />
             </Grid>
-            <Grid item xs={12}>
-              <Button
-                sx={{ height: 54 }}
-                variant="contained"
-                color="primary"
-                size="medium"
-                fullWidth
-                onClick={handleSubmitContactForm}
-              >
-                Submit
-              </Button>
+            <Grid container>
+              <Grid item xs={9} sx={{
+                paddingLeft: 4,
+                paddingTop: 4
+              }}>
+                <ReCAPTCHA
+                  sitekey={'6Le8IOYcAAAAAMsweb5rNm-PKSfEJ12Kpah4PzVX'}
+                  onChange={sendEmail}
+                />
+              </Grid>
+              <Grid item xs={3} sx={{
+                paddingTop: 4
+              }}>
+                <Button
+                  disabled={!captchaValue}
+                  sx={{ height: 54 }}
+                  variant="contained"
+                  color="primary"
+                  size="medium"
+                  fullWidth
+                  onClick={handleSubmitContactForm}
+                >
+                  Submit
+                </Button>
+              </Grid>
             </Grid>
             <Grid item xs={12}>
               <Divider />
