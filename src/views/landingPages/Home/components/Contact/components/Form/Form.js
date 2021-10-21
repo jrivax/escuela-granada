@@ -1,14 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from 'react';
+import emailjs from 'emailjs-com';
+
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Box } from '@mui/system';
 import Card from '@mui/material/Card';
-import { Button } from '@mui/material';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
+import { Button, Snackbar, TextField, Typography, Divider, Grid, Alert } from '@mui/material';
 
 const Form = () => {
   const theme = useTheme();
@@ -16,13 +14,34 @@ const Form = () => {
   const [secondName, setSecondName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [open, setOpen] = useState(false);
+  const [severity, setSeverity] = useState("info");
+
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
+    defaultMatches: true
   });
 
   const handleSubmitContactForm = (e) => {
-    debugger;
-    console.log('Hello');
+    e.preventDefault();
+    const templateEmail = {
+      from_name: firstName || "Sin indicar",
+      from_surname: secondName || "Sin indicar",
+      form_message: message || "Sin indicar",
+      form_email: email || "Sin indicar"
+    }
+    try {
+      emailjs.send("service_9i6x61m", "template_3n8vlpm", templateEmail, 'user_4zicAFLBjHELQFusN96Dj')
+        .then((response) => {
+          setSeverity("success");
+          setOpen(true);
+        }, (error) => {
+          setSeverity("error");
+          setOpen(true);
+        });
+    } catch (error) {
+      setSeverity("error");
+      setOpen(true);
+    }
   }
   return (
     <Box>
@@ -71,7 +90,7 @@ const Form = () => {
                 size="medium"
                 fullWidth
                 onChange={e => setEmail(e.target.value)}
-                />
+              />
             </Grid>
             <Grid item xs={12}>
               <TextField
@@ -137,6 +156,14 @@ const Form = () => {
             </Grid>
           </Grid>
         </form>
+        <Snackbar open={open} autoHideDuration={6000} onClose={e => setOpen(false)}>
+          <Alert onClose={e => setOpen(false)} severity={severity} sx={{ width: '100%' }}>
+            {
+              severity === 'error' ? 'Error mandando notificación, por favor, intente ponerse en contacto de manera telefónica o intentelo de nuevo más tarde, sentimos las molestias'
+                : 'Notificación enviada con éxito, nos pondemos en contacto con usted a la mayor brevedad posible, tu bienestar es nuestro bienestar'
+            }
+          </Alert>
+        </Snackbar>
       </Box>
     </Box>
   );
