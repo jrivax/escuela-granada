@@ -179,7 +179,7 @@ const Professionals = (props) => {
                             state: {
                               professional: item
                             }
-                          }}>Sign up here</Link>
+                          }}>Más información</Link>
                         </Box>
                       </Grid>
                     </Grid>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Hidden from '@mui/material/Hidden';
 import { Box } from '@mui/system';
 import { Button } from '@mui/material';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import { colors } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
@@ -141,7 +141,7 @@ const Topbar = ({
             )}
           </IconButton>
         </Box> */}
-        <Hidden mdDown> 
+        <Hidden mdDown>
           <Box>
             <Link underline="none" component="a" href="/" color="textPrimary">
               Inicio
@@ -156,6 +156,12 @@ const Topbar = ({
             >
               Sobre nosotros
             </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link to={{
+              pathname: '/books-view',
+              state: {}
+            }}>Libros</Link>
           </Box>
           {/* <Box>
             <Button
