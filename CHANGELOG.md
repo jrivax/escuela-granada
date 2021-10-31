@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.4.0] 2021-10-31
+### Added
+### Bug fixing
+### Major style changes
+### Deleted components
+### Added components
+    Add escuela granada's books section
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+```
+### Warning
+
 ## [1.3.0] 2021-08-18
 ### Added
 ### Bug fixing
