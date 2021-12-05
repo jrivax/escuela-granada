@@ -17,7 +17,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 import julioHerrero from 'img/faces/julioHerrero.jpg';
 import maria from 'img/faces/maria.jpeg';
-import clara from 'img/faces/clara_dos.png';
+import ester from 'img/faces/ester.jpg';
+import clara from 'img/faces/clara_true.jpg';
+import noelia from 'img/faces/clara_dos.png';
 import guadalupe from 'img/faces/guadalupe.jpeg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@mui/material';
@@ -104,17 +106,63 @@ const Professionals = (props) => {
             },
             {
               name: 'Dña. Clara Giménez del Olmo',
-              title: 'Psicólogo Psicoterapeuta',
+              title: 'Psicóloga Psicoterapeuta',
               avatar: `${clara}`,
+              description: [
+                , 'Licenciada en Psicología por la Universidad complutense de Madrid en 1982.'
+                , 'Formación en Psicoterapia Cognitiva en el Servicio de psiquiatría del Hospital Central Cruz Roja Española de Madrid. 1982-1986'
+                , '1982-1987. Psicólogo Clínico formando parte del equipo terapéutico del Hospital Central Cruz Roja Española de Madrid. Dirigido por el Dr. Esteban Acosta Lorenzo.'
+                , '1984-1985. Formación en Análisis y Técnicas de Modificación de Conducta. Terapia Marital y Familiar. Trastornos Psicosomáticos en Madrid. I.A.M.C.O.'
+                , 'Miembro  fundador del Centro de Psicoterapia Médica Escuela Granada en Madrid, donde ejerce como Psicólogo Psicoterapeuta desde 1985, realizando diversas actividades terapéutico- docentes.'
+                , 'Formadora de Monitores en la técnica de Entrenamiento en Relajación Creativa (Dr. Eugenio Herrero Lozano), tanto para adultos como infantil.'
+                , 'Practitioner en Programación Neurolingüística. 2001.'
+                , 'Entrenadora oficial MDR INSTITUTE para España. INSTITUTE USA Francine Sapiro'
+              ]
+            },
+            {
+              name: 'Dra. Ester Herrero Martín',
+              title: 'Médico Psicóloga. Psicoterapeuta',
+              avatar: `${ester}`,
+              description: [
+                , "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid.."
+                , "Especialista en Medicina Familiar y Comunitaria mediante el sistema M.I.R., tras formación en el Hospital Ramón y Cajal  y el Centro de Salud Dr. Cirajas,"
+                , "Cursos de Doctorado realizados en la Universidad de Alcalá de Henares, Madrid. SUFICIENCIA INVESTIGADORA concedida en Noviembre de 1999, tras ser aprobado el Proyecto de Tesis titulado “Efecto de la Relajación Creativa en el Manejo de la Hipertensión Arterial”."
+                , "Master en Psicoterapia Individual y de Grupo por la Universidad Pontificia Comillas de Madrid."
+                , "Monitora de la Técnica Entrenamiento en Relajación Creativa"
+              ]
             },
             {
               name: 'Dra. María Herrero Martín',
-              title: 'Médico Psicólogo. Psicoterapeuta',
+              title: 'Médico Psicóloga. Psicoterapeuta',
               avatar: `${maria}`,
+              description: [
+                , "Licenciada en Psicología por la Universidad Autónoma de Madrid"
+                , "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid."
+                , "Master en Psicoterapia Individual y de Grupo por la Universidad Pontificia Comillas de Madrid."
+                , "Experta en Terapia centrada en el cliente, Gestalt, Focusing, Bioenergética y Medicina Psicosomática."
+                , "Monitora de la Técnica Entrenamiento en Relajación Creativa"
+              ]
+            },
+            {
+              name: 'Noelia',
+              title: 'Psicóloga',
+              avatar: `${noelia}`,
+              description: [
+                , "Licenciada en Psicología por la Universidad Autónoma de Madrid."
+                , "Master en Psicología infantil, adolescencia y juventud en el Instituto de Lenguaje y Desarrollo (I.L.D)."
+                , "Formación especializada y experiencia en diagnóstico e intervención en Trastornos emocionales, conductuales y Trastornos de alimentación. Centro Agora."
+                , "Formación especializada y experiencia en diagnóstico e intervención en Altas Capacidades. Centro Agora."
+                , "Experto en psicoterapia breve en niños, adolescentes y jóvenes. Sociedad Española de Medicina Psicosomática.SEMPYP."
+                , "Experto en TDAH por la Escuela del Dr. Barkley y Fundación educación activa."
+                , "Especialista en Trastornos de aprendizaje y Terapia del Lenguaje en la infancia, adolescencia y juventud. Fundación ICSE."
+                , "Experto en intervención en trauma con EMDR. Sociedad Española de Medicina Psicosomática. SEMPYP."
+                , "Especialista en Atención Temprana por la Fundación ICSE."
+                , "Educadora de masaje infantil en bebés de 2 a 8 meses de edad, para favorecer el vínculo afectivo entre padres e hijos. Asociación Española de Masaje Infantil."
+              ]
             },
             {
               name: 'Guadalupe Mena Rodriguez',
-              title: 'Psicólogo Psicoterapeuta',
+              title: 'Psicóloga sanitaria',
               avatar: `${guadalupe}`,
             }
             // {

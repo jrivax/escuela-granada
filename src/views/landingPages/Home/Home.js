@@ -3,7 +3,8 @@ import { useTheme, alpha } from '@mui/material/styles';
 import { Box } from '@mui/system';
 import Container from 'common/Container';
 import { Hero, Overview, Professionals, Contact } from './components';
-import backgroundImage from 'img/camino_salud_2.jpg';
+// import backgroundImage from 'img/camino_salud_2.jpg';
+import backgroundImage from 'img/path_background.jpg';
 
 const Home = ({ themeMode = 'light' }) => {
   const theme = useTheme();
@@ -34,7 +35,7 @@ const Home = ({ themeMode = 'light' }) => {
             width: '100%',
             content: '" "',
             zIndex: 1,
-            backgroundColor: alpha(theme.palette.primary.main, .3),
+            backgroundColor: theme.palette.primary.backgroundImage,
             backgroundAttachment: 'fixed',
             opacity: 0.7,
           },

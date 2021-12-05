@@ -20,6 +20,7 @@ const Hero = () => {
       <Grid item container alignItems={'center'} xs={12} md={8}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box 
+          minWidth={1150}
           marginBottom={2}
           marginRight={2}>
             <Typography
@@ -27,7 +28,7 @@ const Hero = () => {
               //color="textThird"
               sx={{
                 fontWeight: 800,
-                color: theme.palette.primary.main
+                color: theme.palette.primary.textHero
               }}
             >
               Enseñamos{' '}
@@ -40,7 +41,7 @@ const Hero = () => {
                 variant={'inherit'}
               >
                 <Typed
-                  strings={['relajación', 'habilidades', 'salud']}
+                  strings={['relajación.', 'habilidades.', 'salud.']}
                   typeSpeed={60}
                   loop={true}
                 />
@@ -49,7 +50,7 @@ const Hero = () => {
           </Box>
           <Box marginBottom={3}>
             <Typography
-              variant="h6"
+              variant="h5"
               component="p"
               //color="textSecondary"
               sx={{ 
