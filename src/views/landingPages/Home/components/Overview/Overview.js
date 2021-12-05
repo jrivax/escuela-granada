@@ -115,7 +115,7 @@ const Overview = ({ themeMode = 'light' }) => {
                   boxShadow={0}
                 >
                   <CardContent>
-                    <Box
+                    {/* <Box
                       component={Avatar}
                       width={50}
                       height={50}
@@ -126,15 +126,16 @@ const Overview = ({ themeMode = 'light' }) => {
                       <Box color={item.color[themeMode === 'light' ? 50 : 900]}>
                         {item.icon}
                       </Box>
-                    </Box>
-                    <Box
+                    </Box> */}
+                    {/* <Box
                       component={Typography}
                       variant={'h6'}
                       gutterBottom
+                      
                       fontWeight={500}
                     >
                       {item.title}
-                    </Box>
+                    </Box> */}
 
                     <Grid container spacing={2}>
                       {(i === 0 || i === 2) ? (

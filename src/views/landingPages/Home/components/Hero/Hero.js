@@ -23,10 +23,10 @@ const Hero = () => {
           marginBottom={2}
           marginRight={2}>
             <Typography
-              variant="h2"
+              variant="h1"
               //color="textThird"
               sx={{
-                fontWeight: 700,
+                fontWeight: 800,
                 color: theme.palette.primary.main
               }}
             >
@@ -40,7 +40,7 @@ const Hero = () => {
                 variant={'inherit'}
               >
                 <Typed
-                  strings={['relajación', 'conocimiento', 'salud']}
+                  strings={['relajación', 'habilidades', 'salud']}
                   typeSpeed={60}
                   loop={true}
                 />
