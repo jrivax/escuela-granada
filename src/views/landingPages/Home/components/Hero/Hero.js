@@ -20,14 +20,15 @@ const Hero = () => {
       <Grid item container alignItems={'center'} xs={12} md={8}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box 
+          minWidth={1150}
           marginBottom={2}
           marginRight={2}>
             <Typography
-              variant="h2"
+              variant="h1"
               //color="textThird"
               sx={{
-                fontWeight: 700,
-                color: theme.palette.primary.main
+                fontWeight: 800,
+                color: theme.palette.primary.textHero
               }}
             >
               Enseñamos{' '}
@@ -40,7 +41,7 @@ const Hero = () => {
                 variant={'inherit'}
               >
                 <Typed
-                  strings={['relajación', 'conocimiento', 'salud']}
+                  strings={['relajación.', 'habilidades.', 'salud.']}
                   typeSpeed={60}
                   loop={true}
                 />
@@ -49,7 +50,7 @@ const Hero = () => {
           </Box>
           <Box marginBottom={3}>
             <Typography
-              variant="h6"
+              variant="h5"
               component="p"
               //color="textSecondary"
               sx={{ 
@@ -57,7 +58,7 @@ const Hero = () => {
                 fontWeight: 400 
               }}
             >
-              Nuestra base de trabajo es que la salud se puede aprender y cultivar. 
+              Nuestra fisolofía es que la salud se puede aprender y cultivar. 
               Sólo hace falta intención de cambio, buenas técnicas y entrenamiento. Se puede aprender a positivar, 
               a disfrutar, a querese uno mismo, a relacionarse, a sanar y siempre mejorar.
             </Typography>

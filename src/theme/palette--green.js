@@ -10,6 +10,8 @@ export const light = {
     light: '#33CC70',
     dark: '#009357',
     contrastText: '#fff',
+    backgroundImage: "#004a25",
+    textHero: "#00db6d"
   },
   secondary: {
     light: '#ffb74d',

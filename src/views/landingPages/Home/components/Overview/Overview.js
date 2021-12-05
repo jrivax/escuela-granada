@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import { Box } from '@mui/system';
+import { alpha, Box } from '@mui/system';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -17,6 +17,8 @@ import { colors } from '@mui/material';
 import GroupIcon from '@mui/icons-material/Group';
 import PersonIcon from '@mui/icons-material/Person';
 import DeviceHubIcon from '@mui/icons-material/DeviceHub';
+
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const Overview = ({ themeMode = 'light' }) => {
   const theme = useTheme();
@@ -36,25 +38,41 @@ const Overview = ({ themeMode = 'light' }) => {
           Centro de Psicoterapia Médica y de Terapia Holística
         </Box>
         <Typography align={'center'} color="textSecondary" variant={'subtitle1'}>
-          Fundado en el año 1985 (por el Dr. Eugenio Herrero Lozano y el Dr. Julio Herrero Lozano entre otros profesionales) y constituido por un equipo multidisciplinar de profesionales (médicos, psicólogos, psiquiatras y fisioterapeutas).
+          Fundado en el año 1985 (por el Dr. Eugenio Herrero Lozano, el Dr. Julio Herrero Lozano y Dña. Clara Giménez del Olmo) y constituido por un equipo multidisciplinar de profesionales (médicos, psicólogos y psiquiatras).
         </Typography>
       </Box>
       <Grid container spacing={isMd ? 8 : 4}>
         {[
           {
             title: 'Base de trabajo',
-            subtitle: 'Entendemos la salud holísticamente, de una forma integral y, por eso, trabajamos con el cuerpo, la mente (emociones-pensamiento) y el espíritu, buscando el equilibrio y las respuestas en el interior de uno mismo (a través del trabajo Psicoterapéutico).',
-            explanation: 'Impartimos cursos de formación y entrenamiento en diversas técnicas psicoterapéuticas que utilizamos para generar equilibrio en el interior del ser humano.',
+            subtitle: [
+              'Entendemos la salud holísticamente, de una forma integral y, por eso, trabajamos con el cuerpo, la mente (pensamiento-emoción) y el espíritu, buscando el equilibrio y las respuestas en el interior de uno mismo (a través del trabajo Psicoterapéutico).'
+            ],
+            explanation: [
+              // 'Impartimos cursos de formación y entrenamiento en diversas técnicas psicoterapéuticas que utilizamos para generar equilibrio en el interior del ser humano.',
+              'Disponemos de:'
+            ],
             icon: (
               <DeviceHubIcon />
             ),
             color: colors.blueGrey,
             lessons: [
+              , "Terapia individual"
+              , "Terapia familiar"
+              , "Terapia online"
+              , "Terapia infantil y juvenil"
+              , "Terapia para personas mayores"
+              , "Terapia de pareja"
+              , "Terapia grupal"
+              , "Cursos de formación"
             ],
           },
           {
             title: 'Terapia individual',
-            subtitle: 'gergqegqe',
+            subtitle: [
+              'Con frecuencia en terapia individual las personas acuden a consulta por problemas de ansiedad, estrés, bajo estado de ánimo e ira, y sus manifestaciones tanto en el cuerpo como en el entorno.'
+              ,'Pero cada vez más personas, con buena salud mental, buscan a un psicólogo porque quieren mejorar sus habilidades sociales y/o competencias emocionales.'
+            ],
             explanation: [
               'Se abordan de forma individualizada trastornos derivados del desequilibrio emocional y mental que generan problemas como ansiedad, depresión, estrés, ira y sus manifestaciones tanto en nuestro cuerpo como en el entorno.',
               'Los trastornos más habituales son:',
@@ -80,16 +98,18 @@ const Overview = ({ themeMode = 'light' }) => {
               'Los grupos de apoyo emocional son estructuras de trabajo para personas interesadas en crecer hacia el bienestar emocional',
               'Se realizan en grupos de 6 a 12 personas que se reúnen periódicamente, acompañados de terapeutas expertos en técnicas de apoyo emocional.',
               'De este modo se consolidan y se practican las herramientas aprendidas en los diferentes cursos impartidos en este centro.'
+              , "La mayoría de las personas que han participado en una terapia de grupo corroboran que ha sido una experiencia positiva y enriquecedor"
+            ],
+            explanation: [
+              , "Al principio, algunas personas son reacias a involucrarse en una terapia de grupo. Por su mente rondan muchas preguntas: ¿Tendré espacio suficiente para hablar de mis problemas? ¿Los otros me escucharán? ¿Qué sucede si los miembros del grupo no me resultan simpáticos? ¿Me sentiré incómodo hablando de mis problemas"
+              , "Es perfectamente comprensible que tengas estas dudas, ya que integrarse en un grupo conlleva involucrarse emocionalmente con otras personas. Sin embargo, las experiencias de los demás pueden resultar muy valiosas, al igual que tus vivencias pueden ayudar a los demás y conocer que hay otras personas que están atravesando circunstancias similares a las tuyas, contribuye a que te sientas identificado y comprendido en el grupo."
+              , "Con la terapia de grupo, poco a poco irás ganando confianza y podrás hablar abiertamente de tus problemas en un ambiente de apoyo y comprensión que te aliviará. Se trata de un espacio privado y confidencial"
             ],
             icon: (
               <GroupIcon />
             ),
-            color: colors.pink,
+            color: colors.green,
             lessons: [
-              'Lesson 1: Doloremque laudantium, totam error.',
-              'Lesson 2: Natus error sit voluptatem',
-              'Lesson 3: Totam rem aperiam, eaque ipsa.',
-              'Lesson 4: Accusantium doloremque laudantium, totam rem',
             ],
           },
         ].map((item, i) => (
@@ -97,8 +117,46 @@ const Overview = ({ themeMode = 'light' }) => {
             <Grid
               container
               spacing={isMd ? 4 : 2}
-              flexDirection={i % 2 === 1 ? 'row-reverse' : 'row'}
+              flexDirection={'row'}
             >
+              <Grid
+                item
+                xs={12}
+                md={6}
+                data-aos={isMd ? 'fade-left' : 'fade-up'}
+              >
+                <Box
+                  component={Card}
+                  display={'flex'}
+                  flexDirection={'column'}
+                  justifyContent={'center'}
+                  width={'100%'}
+                  height={'100%'}
+                  bgcolor={alpha(item.color[themeMode === 'light' ? 50 : 900], .3)}
+                >
+                  <CardContent>
+                    <Box marginBottom={2}>
+                      <Box
+                        component={Typography}
+                        variant={'h4'}
+                        gutterBottom
+                        fontWeight={600}
+                      >
+                        {item.title}
+                      </Box>
+                      <Grid container spacing={2}>
+                        {item.subtitle.map((oneEx, z) => (
+                          <Grid item>
+                            <Typography key={z} color="text.secondary">
+                              {oneEx}
+                            </Typography>
+                          </Grid>
+                        ))}
+                      </Grid>
+                    </Box>
+                  </CardContent>
+                </Box>
+              </Grid>
               <Grid
                 item
                 xs={12}
@@ -115,146 +173,40 @@ const Overview = ({ themeMode = 'light' }) => {
                   boxShadow={0}
                 >
                   <CardContent>
-                    <Box
-                      component={Avatar}
-                      width={50}
-                      height={50}
-                      marginBottom={6}
-                      bgcolor={item.color[themeMode === 'light' ? 900 : 50]}
-                      boxShadow={4}
-                    >
-                      <Box color={item.color[themeMode === 'light' ? 50 : 900]}>
-                        {item.icon}
-                      </Box>
-                    </Box>
-                    <Box
-                      component={Typography}
-                      variant={'h6'}
-                      gutterBottom
-                      fontWeight={500}
-                    >
-                      {item.title}
-                    </Box>
 
                     <Grid container spacing={2}>
-                      {(i === 0 || i === 2) ? (
-                        Array.isArray(item.subtitle) ? item.subtitle.map((oneSb, z) => (
-                          <Grid item>
-                            <Typography key={z} color="text.secondary">
-                              {oneSb}
-                            </Typography>
-                          </Grid>
-                        )) :
-                          <Grid item>
-                            {item.subtitle}
-                          </Grid>
-                      ) : (
-                        Array.isArray(item.explanation) ? item.explanation.map((oneEx, z) => (
-                          <Grid item>
-                            <Typography key={z} color="text.secondary">
-                              {oneEx}
-                            </Typography>
-                          </Grid>
-                        )) :
-                          <Grid item>
-                            {item.explanation}
-                          </Grid>
-                      )
-                      }
+                      {item.explanation.map((oneSb, z) => (
+                        <Grid item>
+                          <Typography key={z} color="text.secondary">
+                            {oneSb}
+                          </Typography>
+                        </Grid>
+                      ))}
                     </Grid>
-                  </CardContent>
-                </Box>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                md={6}
-                data-aos={isMd ? 'fade-left' : 'fade-up'}
-              >
-                <Box
-                  display={'flex'}
-                  flexDirection={'column'}
-                  justifyContent={'center'}
-                  width={'100%'}
-                  height={'100%'}
-                >
-                  <Box marginBottom={2}>
-                    <Box
-                      component={Typography}
-                      variant={'h4'}
-                      gutterBottom
-                      fontWeight={600}
-                    >
-                      {item.title}
-                    </Box>
-                    <Grid container spacing={2}>
-                      {(i === 0 || i === 2) ? (
-                        Array.isArray(item.explanation) ? item.explanation.map((oneEx, z) => (
-                          <Grid item>
-                            <Typography key={z} color="text.secondary">
-                              {oneEx}
-                            </Typography>
-                          </Grid>
-                        )) :
-                          <Grid item>
-                            {item.explanation}
-                          </Grid>
-
-                      ) : (
-                        Array.isArray(item.explanation) ? item.explanation.map((oneSb, z) => (
-                          <Grid item>
-                            <Typography key={z} color="text.secondary">
-                              {oneSb}
-                            </Typography>
-                          </Grid>
-                        )) :
-                          <Grid item>
-                            {item.explanation}
-                          </Grid>
-                      )
-                      }
-                    </Grid>
-                  </Box>
-                  <Grid container spacing={1}>
-                    {item.lessons.map((lesson, j) => (
-                      <Grid item xs={12} key={j}>
-                        <Box
-                          component={ListItem}
-                          disableGutters
-                          width={'auto'}
-                          padding={0}
-                        >
+                    <Grid container>
+                      {item.lessons.map((lesson, j) => (
+                        <Grid item xs={12} key={j}>
                           <Box
-                            component={ListItemAvatar}
-                            minWidth={'auto !important'}
-                            marginRight={2}
+                            component={ListItem}
+                            disableGutters
+                            width={'auto'}
+                            padding={0}
                           >
                             <Box
-                              component={Avatar}
-                              bgcolor={theme.palette.secondary.main}
-                              width={20}
-                              height={20}
+                              component={ListItemAvatar}
+                              minWidth={'auto !important'}
+                              marginRight={2}
                             >
-                              <svg
-                                width={12}
-                                height={12}
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                              >
-                                <path
-                                  fillRule="evenodd"
-                                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                  clipRule="evenodd"
-                                />
-                              </svg>
+                              <ArrowRightIcon color={"secondary"} />
                             </Box>
+                            <Typography key={j} color="text.secondary">
+                              {lesson}
+                            </Typography>
                           </Box>
-                          <ListItemText primary={lesson} />
-                        </Box>
-                      </Grid>
-                    ))}
-                  </Grid>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </CardContent>
                 </Box>
               </Grid>
             </Grid>

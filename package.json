@@ -4,7 +4,7 @@
   "author": "fjrivas",
   "email": "franjavirito@gmail.com",
   "private": true,
-  "dependencies": {
+  "dependencies": {    
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@mui/icons-material": "^5.0.3",
@@ -40,6 +40,7 @@
     "@babel/plugin-proposal-class-properties": "7.10.1",
     "@babel/plugin-proposal-optional-chaining": "^7.13.12",
     "@babel/plugin-syntax-optional-chaining": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.16.4",
     "@babel/preset-env": "^7.10.1",
     "@babel/preset-react": "7.10.1",
     "babel-loader": "^8.2.2",

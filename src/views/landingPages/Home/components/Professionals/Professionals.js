@@ -16,9 +16,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 import julioHerrero from 'img/faces/julioHerrero.jpg';
+import eugenio from 'img/faces/eugenio.png';
 import maria from 'img/faces/maria.jpeg';
-import clara from 'img/faces/clara_dos.png';
+import ester from 'img/faces/ester.jpg';
+import clara from 'img/faces/clara_true.jpg';
+import noelia from 'img/faces/clara_dos.png';
 import guadalupe from 'img/faces/guadalupe.jpeg';
+import belen from 'img/faces/belen.jpg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -93,6 +97,15 @@ const Professionals = (props) => {
           {/* <Grid container spacing={2}> */}
           {[
             {
+              name: 'Dr. Eugenio Herrero Lozano',
+              title: 'Médico Psiquiatra y Neurólogo. Psicoterapeuta.',
+              avatar: `${eugenio}`,
+              description: ['El Dr. Eugenio Herrero fue médico especialista en Psiquiatría y Neurología, diplomado en Sofrología Médica, miembro fundador del Instituto de Estudios Psicosomáticos y Psicoterapia Médica, miembro fundador y presidente de la asociación Internacional de Terapias Holísticas Tradicionales, entre otras titulaciones y cargos.'
+                , 'Desde 1971 dictó cursos de relajación para médicos, psicólogos y pacientes en el Hospital Provincial de Madrid. Desde 1981 dirigió seminarios teórico-prácticos sobre técnicas de relajación e hipnosis, así como grupos de terapia de relajación, en el Hospital Central de la Cruz Roja de Madrid.'
+                , 'Fue el creador de la técnica de Relajación Creativa que se sigue impartiendo en la Escuela Granada.'
+              ]
+            },
+            {
               name: 'Dr. Julio Herrero Lozano',
               title: 'Médico Psiquiatra. Psicoterapeuta.',
               avatar: `${julioHerrero}`,
@@ -106,16 +119,73 @@ const Professionals = (props) => {
               name: 'Dña. Clara Giménez del Olmo',
               title: 'Psicólogo Psicoterapeuta',
               avatar: `${clara}`,
+              description: [
+                , 'Licenciada en Psicología por la Universidad complutense de Madrid en 1982.'
+                , 'Formación en Psicoterapia Cognitiva en el Servicio de psiquiatría del Hospital Central Cruz Roja Española de Madrid. 1982-1986'
+                , '1982-1987. Psicólogo Clínico formando parte del equipo terapéutico del Hospital Central Cruz Roja Española de Madrid. Dirigido por el Dr. Esteban Acosta Lorenzo.'
+                , '1984-1985. Formación en Análisis y Técnicas de Modificación de Conducta. Terapia Marital y Familiar. Trastornos Psicosomáticos en Madrid. I.A.M.C.O.'
+                , 'Miembro  fundador del Centro de Psicoterapia Médica Escuela Granada en Madrid, donde ejerce como Psicólogo Psicoterapeuta desde 1985, realizando diversas actividades terapéutico- docentes.'
+                , 'Formadora de Monitores en la técnica de Entrenamiento en Relajación Creativa (Dr. Eugenio Herrero Lozano), tanto para adultos como infantil.'
+                , 'Practitioner en Programación Neurolingüística. 2001.'
+                , 'Entrenadora oficial MDR INSTITUTE para España. INSTITUTE USA Francine Sapiro'
+              ]
+            },
+            {
+              name: 'Dra. Ester Herrero Martín',
+              title: 'Médico Psicoterapeuta',
+              avatar: `${ester}`,
+              description: [
+                , "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid.."
+                , "Especialista en Medicina Familiar y Comunitaria mediante el sistema M.I.R., tras formación en el Hospital Ramón y Cajal  y el Centro de Salud Dr. Cirajas,"
+                , "Cursos de Doctorado realizados en la Universidad de Alcalá de Henares, Madrid. SUFICIENCIA INVESTIGADORA concedida en Noviembre de 1999, tras ser aprobado el Proyecto de Tesis titulado “Efecto de la Relajación Creativa en el Manejo de la Hipertensión Arterial”."
+                , "Master en Psicoterapia Individual y de Grupo por la Universidad Pontificia Comillas de Madrid."
+                , "Monitora de la Técnica Entrenamiento en Relajación Creativa"
+              ]
             },
             {
               name: 'Dra. María Herrero Martín',
-              title: 'Médico Psicólogo. Psicoterapeuta',
+              title: 'Médico Psicóloga. Psicoterapeuta',
               avatar: `${maria}`,
+              description: [
+                , "Licenciada en Psicología por la Universidad Autónoma de Madrid"
+                , "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid."
+                , "Master en Psicoterapia Individual y de Grupo por la Universidad Pontificia Comillas de Madrid."
+                , "Experta en Terapia centrada en el cliente, Gestalt, Focusing, Bioenergética y Medicina Psicosomática."
+                , "Monitora de la Técnica Entrenamiento en Relajación Creativa"
+              ]
             },
             {
-              name: 'Guadalupe Mena Rodriguez',
-              title: 'Psicólogo Psicoterapeuta',
+              name: 'Noelia',
+              title: 'Psicóloga',
+              avatar: `${noelia}`,
+              description: [
+                , "Licenciada en Psicología por la Universidad Autónoma de Madrid."
+                , "Master en Psicología infantil, adolescencia y juventud en el Instituto de Lenguaje y Desarrollo (I.L.D)."
+                , "Formación especializada y experiencia en diagnóstico e intervención en Trastornos emocionales, conductuales y Trastornos de alimentación. Centro Agora."
+                , "Formación especializada y experiencia en diagnóstico e intervención en Altas Capacidades. Centro Agora."
+                , "Experto en psicoterapia breve en niños, adolescentes y jóvenes. Sociedad Española de Medicina Psicosomática.SEMPYP."
+                , "Experto en TDAH por la Escuela del Dr. Barkley y Fundación educación activa."
+                , "Especialista en Trastornos de aprendizaje y Terapia del Lenguaje en la infancia, adolescencia y juventud. Fundación ICSE."
+                , "Experto en intervención en trauma con EMDR. Sociedad Española de Medicina Psicosomática. SEMPYP."
+                , "Especialista en Atención Temprana por la Fundación ICSE."
+                , "Educadora de masaje infantil en bebés de 2 a 8 meses de edad, para favorecer el vínculo afectivo entre padres e hijos. Asociación Española de Masaje Infantil."
+              ]
+            },
+            {
+              name: 'Dña. Guadalupe Mena Rodriguez',
+              title: 'Psicóloga sanitaria',
               avatar: `${guadalupe}`,
+            },
+            {
+              name: 'Dña. Belén Pérez de la Oliva',
+              title: 'Psicóloga Psicoterapeuta',
+              avatar: `${belen}`,
+              description: [
+                , "Licenciada en psicología por la U.C.M en 2007"
+                , "Psicóloga colegiada M-29142"
+                , "Formación en terapia sexual y de pareja (Fundación sexpol)"
+                , "Psicoterapeuta Gestalt (EMTG)"
+              ]
             }
             // {
             //   name: 'Guadalupe Mena Rodriguez',
