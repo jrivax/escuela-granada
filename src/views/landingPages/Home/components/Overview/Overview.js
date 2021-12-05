@@ -46,7 +46,7 @@ const Overview = ({ themeMode = 'light' }) => {
           {
             title: 'Base de trabajo',
             subtitle: [
-              'Entendemos la salud holísticamente, de una forma integral y, por eso, trabajamos con el cuerpo, la mente (pensamiento-emoción) y el espíritu, buscando el equilibrio y las respuestas en el interior de uno mismo (a través del trabajo Psicoterapéutico).'
+              'Entendemos la salud holísticamente, de una forma integral y, por eso, trabajamos con, la mente (pensamiento-emoción), el cuerpo y el espíritu, buscando el equilibrio y las respuestas en el interior de uno mismo (a través del trabajo Psicoterapéutico).'
             ],
             explanation: [
               // 'Impartimos cursos de formación y entrenamiento en diversas técnicas psicoterapéuticas que utilizamos para generar equilibrio en el interior del ser humano.',
@@ -82,28 +82,28 @@ const Overview = ({ themeMode = 'light' }) => {
             ),
             color: colors.lightBlue,
             lessons: [
-              'Ansiedad y estrés.',
-              'Depresión.',
-              'Fobias.',
-              'Obsesiones.',
-              'Problemas en las relaciones sociales.',
-              'Disfunciones sexuales.',
-              'Alcohoslimo, tabaquismo y conductas adictivas.',
-              'Enfermedades psicosomáticas.'
+              'Ansiedad y estrés',
+              'Depresión',
+              'Fobias',
+              'Obsesiones',
+              'Problemas en las relaciones sociales',
+              'Disfunciones sexuales',
+              'Alcohoslimo, tabaquismo y conductas adictivas',
+              'Enfermedades psicosomática'
             ],
           },
           {
             title: 'Terapia grupal',
             subtitle: [
-              'Los grupos de apoyo emocional son estructuras de trabajo para personas interesadas en crecer hacia el bienestar emocional',
+              'Los grupos de apoyo emocional son estructuras de trabajo para personas interesadas en crecer hacia el bienestar emocional.',
               'Se realizan en grupos de 6 a 12 personas que se reúnen periódicamente, acompañados de terapeutas expertos en técnicas de apoyo emocional.',
               'De este modo se consolidan y se practican las herramientas aprendidas en los diferentes cursos impartidos en este centro.'
-              , "La mayoría de las personas que han participado en una terapia de grupo corroboran que ha sido una experiencia positiva y enriquecedor"
+              , "La mayoría de las personas que han participado en una terapia de grupo corroboran que ha sido una experiencia positiva y enriquecedor."
             ],
             explanation: [
-              , "Al principio, algunas personas son reacias a involucrarse en una terapia de grupo. Por su mente rondan muchas preguntas: ¿Tendré espacio suficiente para hablar de mis problemas? ¿Los otros me escucharán? ¿Qué sucede si los miembros del grupo no me resultan simpáticos? ¿Me sentiré incómodo hablando de mis problemas"
+              , "Al principio, algunas personas son reacias a involucrarse en una terapia de grupo. Por su mente rondan muchas preguntas: ¿Tendré espacio suficiente para hablar de mis problemas? ¿Los otros me escucharán? ¿Qué sucede si los miembros del grupo no me resultan simpáticos? ¿Me sentiré incómodo hablando de mis problemas."
               , "Es perfectamente comprensible que tengas estas dudas, ya que integrarse en un grupo conlleva involucrarse emocionalmente con otras personas. Sin embargo, las experiencias de los demás pueden resultar muy valiosas, al igual que tus vivencias pueden ayudar a los demás y conocer que hay otras personas que están atravesando circunstancias similares a las tuyas, contribuye a que te sientas identificado y comprendido en el grupo."
-              , "Con la terapia de grupo, poco a poco irás ganando confianza y podrás hablar abiertamente de tus problemas en un ambiente de apoyo y comprensión que te aliviará. Se trata de un espacio privado y confidencial"
+              , "Con la terapia de grupo, poco a poco irás ganando confianza y podrás hablar abiertamente de tus problemas en un ambiente de apoyo y comprensión que te aliviará. Se trata de un espacio privado y confidencial."
             ],
             icon: (
               <GroupIcon />
