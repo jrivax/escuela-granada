@@ -21,7 +21,7 @@ import maria from 'img/faces/maria.jpeg';
 import ester from 'img/faces/ester.jpg';
 import clara from 'img/faces/clara_true.jpg';
 import noelia from 'img/faces/clara_dos.png';
-import guadalupe from 'img/faces/guadalupe.jpeg';
+import guadalupe from 'img/faces/guada.png';
 import belen from 'img/faces/belen.jpg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@mui/material';
