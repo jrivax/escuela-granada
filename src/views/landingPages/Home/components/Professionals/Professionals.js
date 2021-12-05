@@ -16,11 +16,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 import julioHerrero from 'img/faces/julioHerrero.jpg';
+import eugenio from 'img/faces/eugenio.png';
 import maria from 'img/faces/maria.jpeg';
 import ester from 'img/faces/ester.jpg';
 import clara from 'img/faces/clara_true.jpg';
 import noelia from 'img/faces/clara_dos.png';
 import guadalupe from 'img/faces/guadalupe.jpeg';
+import belen from 'img/faces/belen.jpg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -95,6 +97,15 @@ const Professionals = (props) => {
           {/* <Grid container spacing={2}> */}
           {[
             {
+              name: 'Dr. Eugenio Herrero Lozano',
+              title: 'Médico Psiquiatra y Neurólogo. Psicoterapeuta.',
+              avatar: `${eugenio}`,
+              description: ['El Dr. Eugenio Herrero fue médico especialista en Psiquiatría y Neurología, diplomado en Sofrología Médica, miembro fundador del Instituto de Estudios Psicosomáticos y Psicoterapia Médica, miembro fundador y presidente de la asociación Internacional de Terapias Holísticas Tradicionales, entre otras titulaciones y cargos.'
+                , 'Desde 1971 dictó cursos de relajación para médicos, psicólogos y pacientes en el Hospital Provincial de Madrid. Desde 1981 dirigió seminarios teórico-prácticos sobre técnicas de relajación e hipnosis, así como grupos de terapia de relajación, en el Hospital Central de la Cruz Roja de Madrid.'
+                , 'Fue el creador de la técnica de Relajación Creativa que se sigue impartiendo en la Escuela Granada.'
+              ]
+            },
+            {
               name: 'Dr. Julio Herrero Lozano',
               title: 'Médico Psiquiatra. Psicoterapeuta.',
               avatar: `${julioHerrero}`,
@@ -106,7 +117,7 @@ const Professionals = (props) => {
             },
             {
               name: 'Dña. Clara Giménez del Olmo',
-              title: 'Psicóloga Psicoterapeuta',
+              title: 'Psicólogo Psicoterapeuta',
               avatar: `${clara}`,
               description: [
                 , 'Licenciada en Psicología por la Universidad complutense de Madrid en 1982.'
@@ -121,7 +132,7 @@ const Professionals = (props) => {
             },
             {
               name: 'Dra. Ester Herrero Martín',
-              title: 'Médico Psicóloga. Psicoterapeuta',
+              title: 'Médico Psicoterapeuta',
               avatar: `${ester}`,
               description: [
                 , "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid.."
@@ -161,9 +172,20 @@ const Professionals = (props) => {
               ]
             },
             {
-              name: 'Guadalupe Mena Rodriguez',
+              name: 'Dña. Guadalupe Mena Rodriguez',
               title: 'Psicóloga sanitaria',
               avatar: `${guadalupe}`,
+            },
+            {
+              name: 'Dña. Belén Pérez de la Oliva',
+              title: 'Psicóloga Psicoterapeuta',
+              avatar: `${belen}`,
+              description: [
+                , "Licenciada en psicología por la U.C.M en 2007"
+                , "Psicóloga colegiada M-29142"
+                , "Formación en terapia sexual y de pareja (Fundación sexpol)"
+                , "Psicoterapeuta Gestalt (EMTG)"
+              ]
             }
             // {
             //   name: 'Guadalupe Mena Rodriguez',

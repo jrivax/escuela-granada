@@ -58,7 +58,7 @@ const Hero = () => {
                 fontWeight: 400 
               }}
             >
-              Nuestra base de trabajo es que la salud se puede aprender y cultivar. 
+              Nuestra fisolofía es que la salud se puede aprender y cultivar. 
               Sólo hace falta intención de cambio, buenas técnicas y entrenamiento. Se puede aprender a positivar, 
               a disfrutar, a querese uno mismo, a relacionarse, a sanar y siempre mejorar.
             </Typography>
