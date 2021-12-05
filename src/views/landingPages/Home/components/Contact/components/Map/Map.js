@@ -39,7 +39,7 @@ const Map = ({ themeMode = 'light' }) => {
               color: theme.palette.textWhite.primary
             }}
           >
-            Nos encantaría hablar de cómo podemos ayudar.
+            Nos encantaría poder ayudarte.
           </Typography>
         </Box>
       </Box>
@@ -72,13 +72,18 @@ const Map = ({ themeMode = 'light' }) => {
               color: theme.palette.textWhite.primary
             }}
           >
-            Teléfono:
+            Teléfonos:
           </Typography>
           <Typography
             sx={{
               color: theme.palette.textWhite.primary
             }}
-            variant={'subtitle1'}>+39 34 111 222</Typography>
+            variant={'subtitle1'}>+34 91 401 59 68</Typography>
+          <Typography
+            sx={{
+              color: theme.palette.textWhite.primary
+            }}
+            variant={'subtitle1'}>+34 638 445 706</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography

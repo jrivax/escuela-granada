@@ -23,6 +23,7 @@ import clara from 'img/faces/clara_true.jpg';
 import noelia from 'img/faces/clara_dos.png';
 import guadalupe from 'img/faces/guada.png';
 import belen from 'img/faces/belen.jpg';
+import mar from 'img/faces/mar.jpeg';
 import girl from 'img/faces/girl.png';
 import { CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -186,6 +187,12 @@ const Professionals = (props) => {
                 , "Formación en terapia sexual y de pareja (Fundación sexpol)"
                 , "Psicoterapeuta Gestalt (EMTG)"
               ]
+            },
+            {
+              name: 'Dña. Mar García Merino',
+              title: 'Secretaria y administrativa',
+              avatar: `${mar}`,
+              description: []
             }
             // {
             //   name: 'Guadalupe Mena Rodriguez',
@@ -244,12 +251,12 @@ const Professionals = (props) => {
                           >
                             Sign up here.
                           </Link> */}
-                          <Link to={{
+                          {item.name !== 'Dña. Mar García Merino' && <Link to={{
                             pathname: '/professional-view',
                             state: {
                               professional: item
                             }
-                          }}>Más información</Link>
+                          }}>Más información</Link>}
                         </Box>
                       </Grid>
                     </Grid>

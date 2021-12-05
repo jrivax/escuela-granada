@@ -88,7 +88,7 @@ const Overview = ({ themeMode = 'light' }) => {
               'Obsesiones',
               'Problemas en las relaciones sociales',
               'Disfunciones sexuales',
-              'Alcohoslimo, tabaquismo y conductas adictivas',
+              'Alcoholismo, tabaquismo y conductas adictivas',
               'Enfermedades psicosomática'
             ],
           },
