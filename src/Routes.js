@@ -15,7 +15,8 @@ import {
 } from 'views/landingPages';
 import {
   Professional as ProfessionalView,
-  Books as BooksView
+  Books as BooksView,
+  Courses as CoursesView
 } from 'views/landingPages/Home/components';
 
 const Routes = () => {
@@ -37,6 +38,12 @@ const Routes = () => {
         <Route exact path="/books-view">
           <WithLayout
             component={BooksView}
+            layout={MainLayout}
+          />
+        </Route>
+        <Route exact path="/courses-view">
+          <WithLayout
+            component={CoursesView}
             layout={MainLayout}
           />
         </Route>

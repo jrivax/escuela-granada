@@ -163,6 +163,12 @@ const Topbar = ({
               state: {}
             }}>Libros</Link>
           </Box>
+          <Box marginX={2}>
+            <Link to={{
+              pathname: '/courses-view',
+              state: {}
+            }}>Cursos</Link>
+          </Box>
           {/* <Box>
             <Button
               variant="contained"
