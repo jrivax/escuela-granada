@@ -11,16 +11,8 @@ import { colors } from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import CardMedia from "@mui/material/CardMedia";
-import Avatar from "@mui/material/Avatar";
+import { Link } from "react-router-dom";
 
-import entrenamientoRelajacionCreativa from "img/libros/relajacionCreativa.png";
-import sabiduriaDeLasEmociones from "img/libros/sabiduriaDeLasEmociones.png";
-import creenciasDanianCreenciasSanas from "img/libros/creenciasDanianCreenciasSanas.png";
-import miedoAlBienestar from "img/libros/miedoAlBienestar.jpg";
-import laLlaveOlvidada from "img/libros/laLlaveOlvidada.png";
-
-import MenuBookIcon from "@mui/icons-material/MenuBook";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const Courses = (props) => {
@@ -139,16 +131,27 @@ const Courses = (props) => {
               width="100%"
               display="flex"
               padding="4px"
-              backgroundColor= "white"
-              maxWidth= "180px"
+              backgroundColor="white"
+              maxWidth="180px"
               cursor="pointer"
-              boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-              textAlign= "center"
+              boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+              data-aos={"fade-up"}
+              textAlign="center"
             >
-              <Typography variant="body1">Entrenamiento en relajación creativa</Typography>
-
-    
-
+              <Typography variant="body1">
+                {
+                  <Link
+                    to={{
+                      pathname: "/professional-view",
+                      state: {
+                        professional: "item",
+                      },
+                    }}
+                  >
+                    Entrenamiento en relajación creativa
+                  </Link>
+                }
+              </Typography>
             </Box>
             <Box
               display={"flex"}
@@ -160,13 +163,25 @@ const Courses = (props) => {
               width="100%"
               display="flex"
               padding="4px"
-              backgroundColor= "white"
-              maxWidth= "180px"
+              backgroundColor="white"
+              maxWidth="180px"
               cursor="pointer"
-              boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-              textAlign= "center"
+              boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+              data-aos={"fade-up"}
+              textAlign="center"
             >
-              <Typography variant="body1">Habilidades Emocionales</Typography>
+              <Typography variant="body1">
+                <Link
+                  to={{
+                    pathname: "/professional-view",
+                    state: {
+                      professional: "item",
+                    },
+                  }}
+                >
+                  Habilidades Emocionales
+                </Link>
+              </Typography>
             </Box>
             <Box display={"flex"} flexDirection="row">
               <Box
@@ -198,13 +213,25 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Consciencia creativa</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/professional-view",
+                        state: {
+                          professional: "item",
+                        },
+                      }}
+                    >
+                      Consciencia creativa
+                    </Link>
+                  </Typography>
                 </Box>
                 <Box
                   display={"flex"}
@@ -216,13 +243,24 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Consciencia de la consciencia</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/professional-view",
+                        state: {
+                          professional: "item",
+                        },
+                      }}
+                    ></Link>
+                    Consciencia de la consciencia
+                  </Typography>
                 </Box>
                 <Box
                   display={"flex"}
@@ -234,13 +272,25 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Consciencia de la unidad</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/professional-view",
+                        state: {
+                          professional: "item",
+                        },
+                      }}
+                    >
+                      Consciencia de la unidad
+                    </Link>
+                  </Typography>
                 </Box>
               </Box>
               <Box display={"flex"} flexDirection="column" alignItems="center">
@@ -248,13 +298,25 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Creencias creativas</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/professional-view",
+                        state: {
+                          professional: "item",
+                        },
+                      }}
+                    >
+                      Creencias creativas
+                    </Link>
+                  </Typography>
                 </Box>
                 <Box
                   display={"flex"}
@@ -266,13 +328,25 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Miedo al bienestar</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/professional-view",
+                        state: {
+                          professional: "item",
+                        },
+                      }}
+                    >
+                      Miedo al bienestar
+                    </Link>
+                  </Typography>
                 </Box>
               </Box>
             </Box>
