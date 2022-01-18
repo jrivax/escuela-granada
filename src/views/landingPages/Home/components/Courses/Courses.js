@@ -127,7 +127,6 @@ const Courses = (props) => {
             </Grid>
           </Box>
           <Box
-            border="1px solid green"
             width="100%"
             display={"flex"}
             justifyContent={"center"}
@@ -137,47 +136,44 @@ const Courses = (props) => {
             height="400px"
           >
             <Box
-              display={"flex"}
-              fontWeight={700}
-              color={theme.palette.secondary.main}
-              fontStyle={"italic"}
-              variant={"h4"}
-              align={"center"}
-              gutterBottom
-              data-aos="fade-up"
-              border="1px solid red"
-              width="fit-content"
-              maxWidth="180px"
+              width="100%"
+              display="flex"
+              padding="4px"
+              backgroundColor= "white"
+              maxWidth= "180px"
+              cursor="pointer"
+              boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+              textAlign= "center"
             >
-              Entrenamiento en relajación creativa
+              <Typography variant="body1">Entrenamiento en relajación creativa</Typography>
+
+    
+
             </Box>
             <Box
               display={"flex"}
-              backgroundColor="blue"
-              width="10px"
+              backgroundColor="#039100"
+              width="5px"
               height="40px"
             ></Box>
             <Box
-              display={"flex"}
-              fontWeight={700}
-              color={theme.palette.secondary.main}
-              fontStyle={"italic"}
-              variant={"h4"}
-              align={"center"}
-              gutterBottom
-              data-aos="fade-up"
-              border="1px solid red"
-              width="fit-content"
-              maxWidth="180px"
+              width="100%"
+              display="flex"
+              padding="4px"
+              backgroundColor= "white"
+              maxWidth= "180px"
+              cursor="pointer"
+              boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+              textAlign= "center"
             >
-              Habilidades Emocionales
+              <Typography variant="body1">Habilidades Emocionales</Typography>
             </Box>
             <Box display={"flex"} flexDirection="row">
               <Box
                 sx={{
                   display: "flex",
-                  backgroundColor: "blue",
-                  width: "10px",
+                  backgroundColor: "#039100",
+                  width: "5px",
                   height: "40px",
                   transform: "rotate(45deg)",
                   position: "relative",
@@ -187,8 +183,8 @@ const Courses = (props) => {
               <Box
                 sx={{
                   display: "flex",
-                  backgroundColor: "blue",
-                  width: "10px",
+                  backgroundColor: "#039100",
+                  width: "5px",
                   height: "40px",
                   transform: "rotate(135deg)",
                   position: "relative",
@@ -199,99 +195,84 @@ const Courses = (props) => {
             <Box display={"flex"} flexDirection="row" gap={"10px"}>
               <Box display={"flex"} flexDirection="column" alignItems="center">
                 <Box
-                  display={"flex"}
-                  fontWeight={700}
-                  color={theme.palette.secondary.main}
-                  fontStyle={"italic"}
-                  variant={"h4"}
-                  align={"center"}
-                  gutterBottom
-                  data-aos="fade-up"
-                  border="1px solid red"
-                  width="fit-content"
-                  maxWidth="180px"
+                  width="100%"
+                  display="flex"
+                  padding="4px"
+                  backgroundColor= "white"
+                  maxWidth= "180px"
+                  cursor="pointer"
+                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  textAlign= "center"
                 >
-                  Consciencia creativa
+                  <Typography variant="body1">Consciencia creativa</Typography>
                 </Box>
                 <Box
                   display={"flex"}
-                  backgroundColor="blue"
-                  width="10px"
+                  backgroundColor="#039100"
+                  width="5px"
                   height="40px"
                 ></Box>
                 <Box
-                  display={"flex"}
-                  fontWeight={700}
-                  color={theme.palette.secondary.main}
-                  fontStyle={"italic"}
-                  variant={"h4"}
-                  align={"center"}
-                  gutterBottom
-                  data-aos="fade-up"
-                  border="1px solid red"
-                  width="fit-content"
-                  maxWidth="180px"
+                  width="100%"
+                  display="flex"
+                  padding="4px"
+                  backgroundColor= "white"
+                  maxWidth= "180px"
+                  cursor="pointer"
+                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  textAlign= "center"
                 >
-                  Consciencia de la consciencia
+                  <Typography variant="body1">Consciencia de la consciencia</Typography>
                 </Box>
                 <Box
                   display={"flex"}
-                  backgroundColor="blue"
-                  width="10px"
+                  backgroundColor="#039100"
+                  width="5px"
                   height="40px"
                 ></Box>
                 <Box
-                  display={"flex"}
-                  fontWeight={700}
-                  color={theme.palette.secondary.main}
-                  fontStyle={"italic"}
-                  variant={"h4"}
-                  align={"center"}
-                  gutterBottom
-                  data-aos="fade-up"
-                  border="1px solid red"
-                  width="fit-content"
-                  maxWidth="180px"
+                  width="100%"
+                  display="flex"
+                  padding="4px"
+                  backgroundColor= "white"
+                  maxWidth= "180px"
+                  cursor="pointer"
+                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  textAlign= "center"
                 >
-                  Consciencia de la unidad
+                  <Typography variant="body1">Consciencia de la unidad</Typography>
                 </Box>
               </Box>
               <Box display={"flex"} flexDirection="column" alignItems="center">
                 <Box
-                  display={"flex"}
-                  fontWeight={700}
-                  color={theme.palette.secondary.main}
-                  fontStyle={"italic"}
-                  variant={"h4"}
-                  align={"center"}
-                  gutterBottom
-                  data-aos="fade-up"
-                  border="1px solid red"
-                  width="fit-content"
-                  maxWidth="180px"
+                  width="100%"
+                  display="flex"
+                  padding="4px"
+                  backgroundColor= "white"
+                  maxWidth= "180px"
+                  cursor="pointer"
+                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  textAlign= "center"
                 >
-                  Creencias creativas
+                  <Typography variant="body1">Creencias creativas</Typography>
                 </Box>
                 <Box
                   display={"flex"}
-                  backgroundColor="blue"
-                  width="10px"
+                  backgroundColor="#039100"
+                  width="5px"
                   height="40px"
                 ></Box>
                 <Box
-                  display={"flex"}
-                  fontWeight={700}
-                  color={theme.palette.secondary.main}
-                  fontStyle={"italic"}
-                  variant={"h4"}
-                  align={"center"}
-                  gutterBottom
-                  data-aos="fade-up"
-                  border="1px solid red"
-                  width="fit-content"
-                  maxWidth="180px"
+                  width="100%"
+                  display="flex"
+                  padding="4px"
+                  backgroundColor= "white"
+                  maxWidth= "180px"
+                  cursor="pointer"
+                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  textAlign= "center"
                 >
-                  Miendo al bienestar
+                  <Typography variant="body1">Miedo al bienestar</Typography>
                 </Box>
               </Box>
             </Box>
