@@ -142,9 +142,9 @@ const Courses = (props) => {
                 {
                   <Link
                     to={{
-                      pathname: "/professional-view",
+                      pathname: "/course-view",
                       state: {
-                        professional: "item",
+                        courseTitle: "Entrenamiento en relajación creativa",
                       },
                     }}
                   >
@@ -173,7 +173,7 @@ const Courses = (props) => {
               <Typography variant="body1">
                 <Link
                   to={{
-                    pathname: "/professional-view",
+                    pathname: "/course-view",
                     state: {
                       professional: "item",
                     },
@@ -223,7 +223,7 @@ const Courses = (props) => {
                   <Typography variant="body1">
                     <Link
                       to={{
-                        pathname: "/professional-view",
+                        pathname: "/course-view",
                         state: {
                           professional: "item",
                         },
@@ -253,7 +253,7 @@ const Courses = (props) => {
                   <Typography variant="body1">
                     <Link
                       to={{
-                        pathname: "/professional-view",
+                        pathname: "/course-view",
                         state: {
                           professional: "item",
                         },
@@ -282,7 +282,7 @@ const Courses = (props) => {
                   <Typography variant="body1">
                     <Link
                       to={{
-                        pathname: "/professional-view",
+                        pathname: "/course-view",
                         state: {
                           professional: "item",
                         },
@@ -308,7 +308,7 @@ const Courses = (props) => {
                   <Typography variant="body1">
                     <Link
                       to={{
-                        pathname: "/professional-view",
+                        pathname: "/course-view",
                         state: {
                           professional: "item",
                         },
@@ -338,9 +338,9 @@ const Courses = (props) => {
                   <Typography variant="body1">
                     <Link
                       to={{
-                        pathname: "/professional-view",
+                        pathname: "/course-view",
                         state: {
-                          professional: "item",
+                          courseTitle: "item",
                         },
                       }}
                     >

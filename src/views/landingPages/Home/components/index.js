@@ -9,3 +9,4 @@ export { default as Highlights } from './Highlights';
 export { default as Contact } from './Contact';
 export { default as Books } from './Books';
 export { default as Courses } from './Courses';
+export { default as Course } from './Course';
