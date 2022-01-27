@@ -39,7 +39,7 @@ const Topbar = ({
           underline="none"
           href="/"
           title="webbee"
-          height={{ xs: 28, md: 32 }}
+          // height={{ xs: 28, md: 32 }}
           width={45}
         >
           <WebbeeLogo height={'100%'} width={'100%'} />

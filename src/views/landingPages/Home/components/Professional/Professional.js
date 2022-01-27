@@ -88,7 +88,7 @@ const Professional = ({ themeMode = 'light' }) => {
                     </Box>
                   </Grid>
                   <Grid item xs={12} sm={6} md={3} data-aos={'fade-left'}>
-                    <Box component={Card} width={900} boxShadow={0} bgcolor={'transparent'}>
+                    <Box component={Card} width={{ xs: 350, md: 700 }} boxShadow={0} bgcolor={'transparent'}>
                       <Box component={CardContent}>
                         <Box component={Card} borderRadius={2} >
                           <CardContent>
@@ -106,7 +106,7 @@ const Professional = ({ themeMode = 'light' }) => {
                                       minWidth={'auto !important'}
                                       marginRight={2}
                                     >
-                                      <Box
+                                      {/* <Box
                                         component={Avatar}
                                         bgcolor={theme.palette.secondary.main}
                                         width={20}
@@ -125,7 +125,7 @@ const Professional = ({ themeMode = 'light' }) => {
                                             clipRule="evenodd"
                                           />
                                         </svg>
-                                      </Box>
+                                      </Box> */}
                                     </Box>
                                     <ListItemText primary={lesson} />
                                   </Box>

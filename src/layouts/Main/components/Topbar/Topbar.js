@@ -1,18 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Hidden from '@mui/material/Hidden';
-import { Box } from '@mui/system';
-import { Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import WebbeeLogo from 'svg/logos/Webbee';
-import paletteTypes from 'common/paletteTypes';
-import logo from 'img/logo_esg_granada_green.png';
-import logoEscuelaGranada from 'img/logo_escuela_granada_verde.png';
-
+import React from "react";
+import PropTypes from "prop-types";
+import Hidden from "@mui/material/Hidden";
+import { Box } from "@mui/system";
+import { Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import { useTheme } from "@mui/material/styles";
+import { colors } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import WebbeeLogo from "svg/logos/Webbee";
+import paletteTypes from "common/paletteTypes";
+import logo from "img/logo_esg_granada_green.png";
+import logoEscuelaGranada from "img/logo_escuela_granada_verde.png";
+import HomeIcon from "@mui/icons-material/Home";
+import { useHistory } from "react-router-dom";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import PsychologyIcon from "@mui/icons-material/Psychology";
 const Topbar = ({
   themeMode,
   themeToggler,
@@ -20,168 +23,138 @@ const Topbar = ({
   onSidebarOpen,
   paletteType,
 }) => {
+  const history = useHistory();
   const theme = useTheme();
   return (
     <Box
-      display={'flex'}
-      justifyContent={'space-between'}
-      alignItems={'center'}
-      width={'100%'}
+      display={"flex"}
+      // justifyContent={'space-between'}
+      // alignItems={'center'}
+      // width={'100%'}
     >
-      <Box display={'flex'} alignItems={'center'}>
+      <Box display={"flex"} alignItems={"center"}>
         {/* <Box marginRight={{ xs: 1, sm: 2 }}>
           <IconButton onClick={onSidebarOpen} aria-label="Menu">
-            <MenuIcon />
+          <MenuIcon />
           </IconButton>
+          <Box sx={{ height: 60, width: 180 }}
         </Box> */}
         <Box
-          display={'flex'}
-          alignItems="baseline"
-          component="a"
-          underline="none"
-          href="/"
-          title="webbee"
-          height={{ xs: 28, md: 45 }}
-          width={45}
+          sx={{
+            height: { xs: 45, md: 50 },
+            width: { xs: 45, md: 50 },
+          }}
         >
-          <img src={logo} alt={'logo'} height={'100%'} width={'100%'} />
-          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+          <Box
+            display={"flex"}
+            alignItems="baseline"
+            component="a"
+            underline="none"
+            href="/"
+            title="webbee"
+            // height={{ xs: 28, md: 45 }}
+            // width={{ xs: 28, md: 45 }}
+            height={"100%"}
+            width={"100%"}
+          >
+            <img src={logo} alt={"logo"} height={"100%"} width={"100%"} />
+            {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+          </Box>
         </Box>
         <Box
-          display={'flex'}
-          alignItems="baseline"
-          component="a"
-          underline="none"
-          href="/"
-          title="webbee"
-          height={{ xs: 28, md: 45 }}
-          width={110}
+          sx={{
+            height: { xs: 40, md: 50 },
+            width: { xs: 75, md: 100 },
+          }}
         >
-          <img src={logoEscuelaGranada} alt={'logoEscuelaGranada'} height={'100%'} width={'100%'} />
-          {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+          <Box
+            display={"flex"}
+            alignItems="baseline"
+            component="a"
+            underline="none"
+            href="/"
+            title="webbee"
+            // height={{ xs: 28, md: 45 }}
+            // width={{ xs: 50, md: 110 }}
+            height={"100%"}
+            width={"100%"}
+          >
+            <img
+              src={logoEscuelaGranada}
+              alt={"logoEscuelaGranada"}
+              height={"100%"}
+              width={"100%"}
+            />
+            {/* <WebbeeLogo height={'100%'} width={'100%'} /> */}
+          </Box>
         </Box>
       </Box>
-      <Box display="flex" alignItems={'center'}>
-        {/* <Box
-          display={'flex'}
-          padding={1}
-          borderRadius={8}
-          bgcolor={theme.palette.alternate.main}
+      <Box
+        display="flex"
+        alignItems={"center"}
+        gap={2}
+        width={"100%"}
+        justifyContent={"flex-end"}
+      >
+        {/* <Hidden mdDown> */}
+        <Box
+          sx={{ display: "flex", flexDirection: "row", cursor: "pointer" }}
+          onClick={(e) => {
+            e.preventDefault();
+            history.push("/");
+          }}
         >
-          {paletteTypes.map((item, i) => (
-            <Box
-              key={item}
-              bgcolor={colors[item][700]}
-              width={20}
-              height={20}
-              borderRadius={'100%'}
-              marginRight={i === paletteTypes.length - 1 ? 0 : 1}
-              display={'flex'}
-              justifyContent={'center'}
-              alignItems={'center'}
-              sx={{ cursor: 'pointer' }}
-              onClick={() => setThemePalette(item)}
-            >
-              {paletteType === item && (
-                <svg
-                  width={12}
-                  height={12}
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              )}
-            </Box>
-          ))}
-        </Box>
-        <Box>
-          <IconButton
-            onClick={() => themeToggler()}
-            aria-label="Dark mode toggler"
-            color={themeMode === 'light' ? 'primary' : 'secondary'}
-          >
-            {themeMode === 'light' ? (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                />
-              </svg>
-            ) : (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-            )}
-          </IconButton>
-        </Box> */}
-        <Hidden mdDown>
-          <Box>
-            <Link underline="none" component="a" href="/" color="textPrimary">
-              Inicio
-            </Link>
-          </Box>
-          <Box marginX={2}>
-            <Link
-              underline="none"
-              component="a"
-              href="/docs-introduction"
-              color="textPrimary"
-            >
-              Sobre nosotros
-            </Link>
-          </Box>
-          <Box marginX={2}>
-            <Link to={{
-              pathname: '/books-view',
-              state: {}
-            }}>Libros</Link>
-          </Box>
-          <Box marginX={2}>
-            <Link to={{
-              pathname: '/courses-view',
-              state: {}
-            }}>Cursos</Link>
-          </Box>
-          {/* <Box>
-            <Button
-              variant="contained"
+          <Box mr={1} sx={{}}>
+            <HomeIcon
+              sx={{ fontSize: { xs: "2.2rem", md: "2.1rem" } }}
               color="primary"
-              component="a"
-              target="blank"
-              href="https://material-ui.com/store/items/webbee-landing-page/"
-              size="large"
-            >
-              Purchase now
-            </Button>
-          </Box> */}
-        </Hidden>
+            />
+          </Box>
+          <Box>
+            <Typography fontSize={{ xs: "0rem", md: "1.5rem" }} color="primary">
+              Inicio
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          sx={{ display: "flex", flexDirection: "row", cursor: "pointer" }}
+          onClick={(e) => {
+            e.preventDefault();
+            history.push("/books-view");
+          }}
+        >
+          <Box mr={1} sx={{}}>
+            <MenuBookIcon
+              sx={{ fontSize: { xs: "2.2rem", md: "2.1rem" } }}
+              color="primary"
+            />
+          </Box>
+          <Box sx={{}}>
+            <Typography fontSize={{ xs: "0rem", md: "1.5rem" }} color="primary">
+              Libros
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          sx={{ display: "flex", flexDirection: "row", cursor: "pointer" }}
+          onClick={(e) => {
+            e.preventDefault();
+            history.push("/courses-view");
+          }}
+        >
+          <Box mr={1} sx={{}}>
+            <PsychologyIcon
+              sx={{ fontSize: { xs: "2.2rem", md: "2.1rem" } }}
+              color="primary"
+            />
+          </Box>
+          <Box sx={{}}>
+            <Typography fontSize={{ xs: "0rem", md: "1.5rem" }} color="primary">
+              Cursos
+            </Typography>
+          </Box>
+        </Box>
+        {/* </Hidden> */}
       </Box>
     </Box>
   );

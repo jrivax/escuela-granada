@@ -11,16 +11,8 @@ import { colors } from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import CardMedia from "@mui/material/CardMedia";
-import Avatar from "@mui/material/Avatar";
+import { Link } from "react-router-dom";
 
-import entrenamientoRelajacionCreativa from "img/libros/relajacionCreativa.png";
-import sabiduriaDeLasEmociones from "img/libros/sabiduriaDeLasEmociones.png";
-import creenciasDanianCreenciasSanas from "img/libros/creenciasDanianCreenciasSanas.png";
-import miedoAlBienestar from "img/libros/miedoAlBienestar.jpg";
-import laLlaveOlvidada from "img/libros/laLlaveOlvidada.png";
-
-import MenuBookIcon from "@mui/icons-material/MenuBook";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const Courses = (props) => {
@@ -50,7 +42,7 @@ const Courses = (props) => {
                   title:
                     "Entrenamiento en Relajación Creativa - Dr. Herrero Lozano, Eugenio.",
                   description: [
-                    'Impartimos cursos diseñados por nosotros, dirigidos a personas interesadas en el desarrollo de la salud emocional. De ahí nuestra idea de "Enseñamos Salud',
+                    'Impartimos cursos diseñados por nosotros, dirigidos a personas interesadas en el desarrollo de la salud emocional. De ahí nuestra idea de "Enseñamos Salud".',
                     "Los cursos están organizados secuencialmente. El curso base sobre el que se apoya toda la estructura de nuestro trabajo es el Entrenamiento en Relajación Creativa.",
                     "Éste es complementado con el curso de Entrenamiento en Habilidades Emocionales.",
                     "A partir de este nivel se pueden realizar dos itinerarios:",
@@ -86,7 +78,7 @@ const Courses = (props) => {
                       <Box
                         component={Card}
                         borderRadius={2}
-                        paddingLeft={5}
+                        paddingLeft={{ xs: 0, md: 4 }}
                         boxShadow={"8px 8px 8px 0px rgb(140 152 164 / 25%)"}
                       >
                         <CardContent>
@@ -105,13 +97,13 @@ const Courses = (props) => {
                                     width={"auto"}
                                     padding={0}
                                   >
-                                    <Box
+                                    {/* <Box
                                       component={ListItemAvatar}
                                       minWidth={"auto !important"}
                                       marginRight={2}
                                     >
                                       <ArrowRightIcon color={"secondary"} />
-                                    </Box>
+                                    </Box> */}
                                     <ListItemText primary={lesson} />
                                   </Box>
                                 </Grid>
@@ -139,20 +131,32 @@ const Courses = (props) => {
               width="100%"
               display="flex"
               padding="4px"
-              backgroundColor= "white"
-              maxWidth= "180px"
+              backgroundColor="white"
+              maxWidth="180px"
               cursor="pointer"
-              boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-              textAlign= "center"
+              boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+              data-aos={"fade-up"}
+              textAlign="center"
             >
-              <Typography variant="body1">Entrenamiento en relajación creativa</Typography>
-
-    
-
+              <Typography variant="body1">
+                {
+                  <Link
+                    to={{
+                      pathname: "/course-view",
+                      state: {
+                        courseTitle: "Entrenamiento en relajación creativa",
+                      },
+                    }}
+                  >
+                    Entrenamiento en relajación creativa
+                  </Link>
+                }
+              </Typography>
             </Box>
             <Box
               display={"flex"}
               backgroundColor="#039100"
+              data-aos={"fade-up"}
               width="5px"
               height="40px"
             ></Box>
@@ -160,16 +164,30 @@ const Courses = (props) => {
               width="100%"
               display="flex"
               padding="4px"
-              backgroundColor= "white"
-              maxWidth= "180px"
+              backgroundColor="white"
+              maxWidth="180px"
               cursor="pointer"
-              boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-              textAlign= "center"
+              boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+              data-aos={"fade-up"}
+              textAlign="center"
             >
-              <Typography variant="body1">Habilidades Emocionales</Typography>
+              <Typography variant="body1">
+                <Link
+                  to={{
+                    pathname: "/course-view",
+                    state: {
+                      courseTitle: "Habilidades Emocionales",
+                    },
+                  }}
+                >
+                  Habilidades Emocionales
+                </Link>
+              </Typography>
             </Box>
             <Box display={"flex"} flexDirection="row">
               <Box
+              data-aos={"fade-up"}
+              transform={"rotate(45deg)"}
                 sx={{
                   display: "flex",
                   backgroundColor: "#039100",
@@ -177,10 +195,12 @@ const Courses = (props) => {
                   height: "40px",
                   transform: "rotate(45deg)",
                   position: "relative",
-                  right: "10px",
+                  right: "20px",
                 }}
               ></Box>
               <Box
+              data-aos={"fade-up"}
+              transform={"rotate(135deg)"}
                 sx={{
                   display: "flex",
                   backgroundColor: "#039100",
@@ -188,7 +208,7 @@ const Courses = (props) => {
                   height: "40px",
                   transform: "rotate(135deg)",
                   position: "relative",
-                  left: "10px",
+                  left: "25px",
                 }}
               ></Box>
             </Box>
@@ -198,17 +218,30 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Consciencia creativa</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/course-view",
+                        state: {
+                          courseTitle: "Consciencia creativa",
+                        },
+                      }}
+                    >
+                      Consciencia creativa
+                    </Link>
+                  </Typography>
                 </Box>
                 <Box
                   display={"flex"}
                   backgroundColor="#039100"
+                  data-aos={"fade-up"}
                   width="5px"
                   height="40px"
                 ></Box>
@@ -216,17 +249,30 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Consciencia de la consciencia</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/course-view",
+                        state: {
+                          courseTitle: "Consciencia de la consciencia",
+                        },
+                      }}
+                    >
+                      Consciencia de la consciencia
+                    </Link>
+                  </Typography>
                 </Box>
                 <Box
                   display={"flex"}
                   backgroundColor="#039100"
+                  data-aos={"fade-up"}
                   width="5px"
                   height="40px"
                 ></Box>
@@ -234,13 +280,25 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Consciencia de la unidad</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/course-view",
+                        state: {
+                          courseTitle: "Consciencia de la unidad",
+                        },
+                      }}
+                    >
+                      Consciencia de la unidad
+                    </Link>
+                  </Typography>
                 </Box>
               </Box>
               <Box display={"flex"} flexDirection="column" alignItems="center">
@@ -248,17 +306,30 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Creencias creativas</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/course-view",
+                        state: {
+                          courseTitle: "Creencias creativas",
+                        },
+                      }}
+                    >
+                      Creencias creativas
+                    </Link>
+                  </Typography>
                 </Box>
                 <Box
                   display={"flex"}
                   backgroundColor="#039100"
+                  data-aos={"fade-up"}
                   width="5px"
                   height="40px"
                 ></Box>
@@ -266,13 +337,25 @@ const Courses = (props) => {
                   width="100%"
                   display="flex"
                   padding="4px"
-                  backgroundColor= "white"
-                  maxWidth= "180px"
+                  backgroundColor="white"
+                  maxWidth="180px"
                   cursor="pointer"
-                  boxShadow= "8px 8px 8px 0px rgb(140 152 164 / 25%)"
-                  textAlign= "center"
+                  boxShadow="8px 8px 8px 0px rgb(140 152 164 / 25%)"
+                  data-aos={"fade-up"}
+                  textAlign="center"
                 >
-                  <Typography variant="body1">Miedo al bienestar</Typography>
+                  <Typography variant="body1">
+                    <Link
+                      to={{
+                        pathname: "/course-view",
+                        state: {
+                          courseTitle: "Miedo al bienestar",
+                        },
+                      }}
+                    >
+                      Miedo al bienestar
+                    </Link>
+                  </Typography>
                 </Box>
               </Box>
             </Box>
