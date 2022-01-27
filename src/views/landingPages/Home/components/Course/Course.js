@@ -12,11 +12,11 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import IconButton from '@mui/material/IconButton';
-import Avatar from '@mui/material/Avatar';
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import IconButton from "@mui/material/IconButton";
+import Avatar from "@mui/material/Avatar";
 
 const cursos = [
   {
@@ -26,25 +26,27 @@ const cursos = [
       { libro: "Entrenamiento en Relajación Creativa" },
       { tipoCurso: "Reunión de seguimiento" },
       { requisitosPrevios: "" },
+      {
+        quien: [
+          "Dra. Ester Herrero Martín",
+          "Dña. Clara Giménez del Olmo",
+          "Dra. María Herrero Martín",
+        ],
+      },
     ],
     queEs: [
       "Una técnica especialmente sencilla y eficaz para aprender a llegar al estado de Relajación a través de la relajación física y, además, a utilizar la imaginación en beneficio propio.",
     ],
     paraQue: [
-      "Aprender a relajarse de forma autónoma en cualquier lugar, situación y postura",
-      "Disminuir las tensiones cotidianas responsables de muchos de los problemas de salud que padecemos",
-      "Aprender a inducir serenidad en nosotros mismos",
-      "Utilizar la imaginacion en beneficio propio",
-      "Experimentar el cuerpo como fuente de salud y bienestar",
+      "Aprender a relajarse de forma autónoma en cualquier lugar, situación y postura.",
+      "Disminuir las tensiones cotidianas responsables de muchos de los problemas de salud que padecemos.",
+      "Aprender a inducir serenidad en nosotros mismos.",
+      "Utilizar la imaginacion en beneficio propio.",
+      "Experimentar el cuerpo como fuente de salud y bienestar.",
     ],
     como: [
       "El entrenamiento se realiza en grupo, sentados y con la ropa de calle para, desde el principio, aprender a relajarse en circunstancias habituales cotidianas.",
       "Se dan explicaciones teóricas y, sobre todo, se realizan ejercicios prácticos, creando entre todos un ambiente de seguridad y confianza.",
-    ],
-    quien: [
-      "Dra. Ester Herrero Martín",
-      "Dña. Clara Giménez del Olmo",
-      "Dra. María Herrero Martín",
     ],
   },
   {
@@ -54,6 +56,13 @@ const cursos = [
       { libro: "La Sabiduría de las Emociones" },
       { tipoCurso: "" },
       { requisitosPrevios: "Curso de Entrenamiento en Relajación Creativa" },
+      {
+        quien: [
+          "Dra. Ester Herrero Martín",
+          "Dña. Clara Giménez del Olmo",
+          "Dra. María Herrero Martín",
+        ],
+      },
     ],
     queEs: [
       "'Piensa bien y vivirás mejor', resume el objetivo de las técnicas empleadas en nuestra psicoterapia, que desarrolla un sistema de observación de 'las emociones como guía' para lograr el equilibrio integral de la persona: cuerpo, emociones y pensamiento.",
@@ -62,12 +71,7 @@ const cursos = [
       "Para aquellas personas, entrenadas en Relajación Creativa, y que desean seguir ampliando y profundizando en el conocimiento de sí mismos para desarrollar herramientas internas que les ayuden a vivir mejor.",
     ],
     como: [
-      "El entrenamiento se realiza en grupo, sentados y con la ropa de calle en grupos de 20 personas aproximadamente",
-    ],
-    quien: [
-      "Dra. Ester Herrero Martín",
-      "Dña. Clara Giménez del Olmo",
-      "Dra. María Herrero Martín",
+      "El entrenamiento se realiza en grupo, sentados y con la ropa de calle en grupos de 20 personas aproximadamente.",
     ],
   },
   {
@@ -79,6 +83,9 @@ const cursos = [
       {
         requisitosPrevios:
           "Entrenamiento en Relajación Creativa y Habilidades Emocionales.",
+      },
+      {
+        quien: ["Dr. Julio Herrero Lozano"],
       },
     ],
     queEs: [
@@ -92,7 +99,6 @@ const cursos = [
     como: [
       "Nos reuniremos en grupos durante 10 horas en total. Se mostrará y desarrollará de forma teórica y práctica toda la información recogida en el libro Creencias que Dañan, Creencias que Sanan, del Dr. Julio Herrero Lozano.",
     ],
-    quien: ["Dr. Julio Herrero Lozano"],
   },
   {
     header: [
@@ -102,6 +108,9 @@ const cursos = [
       { tipoCurso: "" },
       {
         requisitosPrevios: "Curso de Creencias que Dañan. Creencias que sanan.",
+      },
+      {
+        quien: ["Dr. Julio Herrero Lozano"],
       },
     ],
     queEs: [
@@ -113,7 +122,6 @@ const cursos = [
     como: [
       "Nos reuniremos en grupos durante 10 horas en total en grupos de 20 personas.",
     ],
-    quien: ["Dr. Julio Herrero Lozano"],
   },
   {
     header: [
@@ -122,6 +130,13 @@ const cursos = [
       { libro: "La Sabiduría de las Emociones." },
       { tipoCurso: "Reunión de seguimiento" },
       { requisitosPrevios: "Curso de Habilidades Emocionales." },
+      {
+        quien: [
+          "Dra. Ester Herrero Martín",
+          "Dña. Clara Giménez del Olmo",
+          "Dra. María Herrero Martín",
+        ],
+      },
     ],
     queEs: [
       `Continuamos en este curso el desarrollo y práctica iniciadas con el Entrenamiento en Relajación Creativa y Entrenamiento en Habilidades Emocionales.`,
@@ -132,11 +147,6 @@ const cursos = [
     como: [
       "El entrenamiento se realiza en grupo, sentados y con la ropa de calle en grupos de 20 personas aproximadamente.",
     ],
-    quien: [
-      "Dra. Ester Herrero Martín",
-      "Dña. Clara Giménez del Olmo",
-      "Dra. María Herrero Martín",
-    ],
   },
   {
     header: [
@@ -145,17 +155,19 @@ const cursos = [
       { libro: "" },
       { tipoCurso: "Reunión de seguimiento: tercer viernes de cada mes." },
       { requisitosPrevios: "Curso de Consciencia Creativa." },
+      {
+        quien: ["Dr. Julio Herrero Lozano"],
+      },
     ],
     queEs: [
       `Este curso es continuación del Entrenamiento en Relajación Creativa, Habilidades Emocionales y Consciencia Creativa, técnicas originales de los Drs. Eugenio Herrero Lozano y Julio Herrero Lozano.`,
     ],
     paraQue: [
-      `Para alcanzar el contacto con el conocimiento interno, origen de la "sabiduría de las emociones" que nos permite crecer en el equilibrio`,
+      `Para alcanzar el contacto con el conocimiento interno, origen de la "sabiduría de las emociones" que nos permite crecer en el equilibrio.`,
     ],
     como: [
       "El entrenamiento se realiza grupos de 20 personas aproximadamente.",
     ],
-    quien: ["Dr. Julio Herrero Lozano"],
   },
   {
     header: [
@@ -164,6 +176,9 @@ const cursos = [
       { libro: "Consciencia de la Unidad" },
       { tipoCurso: "" },
       { requisitosPrevios: "Curso de Consciencia de la Consciencia." },
+      {
+        quien: ["Dr. Julio Herrero Lozano"],
+      },
     ],
     queEs: [
       `Este curso es continuación del Entrenamiento en Relajación Creativa, Habilidades Emocionales, Consciencia Creativa y Consciencia de la Consciencia, técnicas originales de los Drs. Eugenio Herrero Lozano y Julio Herrero Lozano.`,
@@ -174,7 +189,6 @@ const cursos = [
     como: [
       "El entrenamiento se realiza grupos de 20 personas aproximadamente.",
     ],
-    quien: ["Dr. Julio Herrero Lozano"],
   },
 ];
 
@@ -185,7 +199,6 @@ const getCourse = (title) => {
 const Course = ({ themeMode = "light" }) => {
   const { courseTitle } = useLocation().state;
   const [course, setCourse] = useState(getCourse(courseTitle));
-  debugger;
   const theme = useTheme();
   return (
     <Box>
@@ -212,22 +225,20 @@ const Course = ({ themeMode = "light" }) => {
                 Creemos en el trabajo en equipo
               </Typography> */}
             </Box>
-            <Box>
-              {/* <Slider {...sliderOpts} > */}
-
-              <Grid container direction="row" spacing={2} alignItems="center">
-                <Grid item xs={12} sm={6} md={3} data-aos={"fade-left"}>
-                  <Box
-                    component={Card}
-                    width={900}
-                    boxShadow={0}
-                    bgcolor={"transparent"}
-                  >
-                    <Box component={CardContent}>
-                      <Box component={Card} borderRadius={2}>
-                        <CardContent>
-                          <Grid container spacing={1}>
-                            {course.header.map((element, j) => (
+            {/* <Slider {...sliderOpts} > */}
+            <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  width={{ xs: 350, md: 500 }}
+                  sx={{ display: "flex" }}
+                  component={CardContent}
+                >
+                  <Box component={Card} borderRadius={2}>
+                    <CardContent>
+                      <Grid container>
+                        {course.header.map((element, j) => {
+                          return (
+                            element[Object.keys(element)] && (
                               <Grid item xs={12} key={j}>
                                 <Box
                                   component={ListItem}
@@ -240,11 +251,11 @@ const Course = ({ themeMode = "light" }) => {
                                     minWidth={"auto !important"}
                                     marginRight={2}
                                   >
-                                    <Box
+                                    {/* <Box
                                       component={Avatar}
                                       bgcolor={theme.palette.secondary.main}
-                                      width={20}
-                                      height={20}
+                                      width={15}
+                                      height={15}
                                     >
                                       <svg
                                         width={12}
@@ -259,37 +270,219 @@ const Course = ({ themeMode = "light" }) => {
                                           clipRule="evenodd"
                                         />
                                       </svg>
-                                    </Box>
+                                    </Box> */}
                                   </Box>
                                   <ListItemText
                                     primary={
-                                      <Box
-                                        sx={{
-                                          display: "flex",
-                                          direction: "row",
-                                        }}
-                                      >
-                                        <Typography variant={"body1"}>
-                                          {Object.keys(element)}
-                                        </Typography>
-                                        <Typography variant={"body1"}>
-                                          {element[Object.keys(element)]}
-                                        </Typography>
-                                      </Box>
+                                      Object.keys(element) == "quien" ? (
+                                        <Box
+                                          sx={{
+                                            display: "flex",
+                                            direction: "row",
+                                            width: "fit-content",
+                                            gap: "16px",
+                                            alignItems: "center",
+                                          }}
+                                        >
+                                          <Box>
+                                            <Typography
+                                              variant={"subtitle1"}
+                                              color="primary"
+                                              fontWeight={700}
+                                            >
+                                              {"Quien lo imparte"}
+                                            </Typography>
+                                          </Box>
+                                          <Box>
+                                            {element[Object.keys(element)].map(
+                                              (eq, j) => {
+                                                return (
+                                                  <Grid item xs={12} key={j}>
+                                                    <Typography
+                                                      variant={"subtitle1"}
+                                                    >
+                                                      {eq}
+                                                    </Typography>
+                                                  </Grid>
+                                                );
+                                              }
+                                            )}
+                                          </Box>
+                                        </Box>
+                                      ) : (
+                                        <Box
+                                          sx={{
+                                            display: "flex",
+                                            direction: "row",
+                                            width: "fit-content",
+                                            gap: "16px",
+                                          }}
+                                        >
+                                          <Typography
+                                            variant={"subtitle1"}
+                                            color="primary"
+                                            fontWeight={700}
+                                          >
+                                            {Object.keys(element) == "nombre"
+                                              ? "Nombre: "
+                                              : Object.keys(element) ==
+                                                "duracion"
+                                              ? "Duración: "
+                                              : Object.keys(element) == "libro"
+                                              ? "Libro: "
+                                              : Object.keys(element) ==
+                                                "tipoCurso"
+                                              ? "Tipo de curso: "
+                                              : Object.keys(element) ==
+                                                "requisitosPrevios"
+                                              ? "Requisitos previos: "
+                                              : Object.keys(element) == "quien"
+                                              ? "Quien lo imparte: "
+                                              : ""}
+                                          </Typography>
+
+                                          <Typography variant={"subtitle1"}>
+                                            {element[Object.keys(element)]}
+                                          </Typography>
+                                        </Box>
+                                      )
                                     }
                                   />
                                 </Box>
                               </Grid>
-                            ))}
-                          </Grid>
-                        </CardContent>
+                            )
+                          );
+                        })}
+                      </Grid>
+                    </CardContent>
+                  </Box>
+                </Box>
+                {/* </Box> */}
+              </Box>
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box sx={{ display: "flex" }}>
+                  <Box
+                    width={{ xs: 300, md: 500 }}
+                    sx={{ display: "flex" }}
+                    component={CardContent}
+                  >
+                    <Box component={Card} borderRadius={2}>
+                      <Box
+                        mt={1}
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Typography
+                          variant={"h5"}
+                          fontWeight={"900"}
+                          fontStyle={"italic"}
+                          color="primary"
+                        >
+                          {"¿ Qué es ?"}
+                        </Typography>
                       </Box>
+                      <CardContent>
+                        <Grid container gap={2}>
+                          {course.queEs.map((element, j) => {
+                            return (
+                              <Grid item xs={12} key={j}>
+                                <Typography variant={"subtitle1"}>
+                                  {element}
+                                </Typography>
+                              </Grid>
+                            );
+                          })}
+                        </Grid>
+                      </CardContent>
                     </Box>
                   </Box>
-                </Grid>
-              </Grid>
-              {/* </Slider> */}
+                </Box>
+                <Box sx={{ display: "flex" }}>
+                  <Box
+                    width={{ xs: 300, md: 500 }}
+                    sx={{ display: "flex" }}
+                    component={CardContent}
+                  >
+                    <Box component={Card} borderRadius={2}>
+                      <Box
+                        mt={1}
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Typography
+                          variant={"h5"}
+                          fontWeight={"900"}
+                          fontStyle={"italic"}
+                          color="primary"
+                        >
+                          {"¿ Para qué sirve ?"}
+                        </Typography>
+                      </Box>
+                      <CardContent>
+                        <Grid container gap={2}>
+                          {course.paraQue.map((element, j) => {
+                            return (
+                              <Grid item xs={12} key={j}>
+                                <Typography variant={"subtitle1"}>
+                                  {element}
+                                </Typography>
+                              </Grid>
+                            );
+                          })}
+                        </Grid>
+                      </CardContent>
+                    </Box>
+                  </Box>
+                </Box>
+                <Box sx={{ display: "flex" }}>
+                  <Box
+                    width={{ xs: 300, md: 500 }}
+                    sx={{ display: "flex" }}
+                    component={CardContent}
+                  >
+                    <Box component={Card} borderRadius={2}>
+                      <Box
+                        mt={1}
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Typography
+                          variant={"h5"}
+                          fontWeight={"900"}
+                          fontStyle={"italic"}
+                          color="primary"
+                        >
+                          {"¿ Cómo lo hacemos ?"}
+                        </Typography>
+                      </Box>
+                      <CardContent>
+                        <Grid container gap={2}>
+                          {course.como.map((element, j) => {
+                            return (
+                              <Grid item xs={12} key={j}>
+                                <Typography variant={"subtitle1"}>
+                                  {element}
+                                </Typography>
+                              </Grid>
+                            );
+                          })}
+                        </Grid>
+                      </CardContent>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
+            <Grid container direction="row" spacing={2} alignItems="center">
+              <Grid item xs={12} sm={6} md={3} data-aos={"fade-left"}></Grid>
+            </Grid>
+            {/* </Slider> */}
           </Box>
         </Container>
       </Box>

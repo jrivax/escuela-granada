@@ -148,7 +148,7 @@ const Books = (props) => {
                       bgcolor={'transparent'}
                       marginTop={-5}
                     >
-                      <Box component={Card} borderRadius={2} paddingLeft={5} boxShadow={'8px 8px 8px 0px rgb(140 152 164 / 25%)'}>
+                      <Box component={Card} borderRadius={2} paddingLeft={{ xs: 0, md: 4 }} boxShadow={'8px 8px 8px 0px rgb(140 152 164 / 25%)'}>
                         <CardContent>
                           <Box
                             display={'flex'}
@@ -174,13 +174,13 @@ const Books = (props) => {
                                     width={'auto'}
                                     padding={0}
                                   >
-                                    <Box
+                                    {/* <Box
                                       component={ListItemAvatar}
                                       minWidth={'auto !important'}
                                       marginRight={2}
                                     >
                                       <ArrowRightIcon color={"secondary"}/>
-                                    </Box>
+                                    </Box> */}
                                     <ListItemText primary={lesson} />
                                   </Box>
                                 </Grid>

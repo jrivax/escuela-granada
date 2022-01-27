@@ -16,17 +16,21 @@ const Hero = () => {
   });
 
   return (
-    <Grid container spacing={4}>
-      <Grid item container alignItems={'center'} xs={12} md={8}>
+
+      <React.Fragment>
+      
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box 
-          minWidth={1150}
+          display={'flex'}
+          // minWidth={1150}
           marginBottom={2}
           marginRight={2}>
             <Typography
               variant="h1"
-              //color="textThird"
+              color="textThird"
+              // fontSize={{ md: '4.6rem', xs: '2.3rem' }}
               sx={{
+                
                 fontWeight: 800,
                 color: theme.palette.primary.textHero
               }}
@@ -48,7 +52,7 @@ const Hero = () => {
               </Typography>
             </Typography>
           </Box>
-          <Box marginBottom={3}>
+          <Box marginBottom={3} sx={{display: 'flex'}}>
             <Typography
               variant="h5"
               component="p"
@@ -99,21 +103,7 @@ const Hero = () => {
             </Box>
           </Box> */}
         </Box>
-      </Grid>
-      {/* <Grid item xs={12} md={4}>
-        <Box
-          height={'100%'}
-          width={'100%'}
-          display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
-        >
-          <Box height={'100%'} width={'100%'} maxHeight={600}>
-            <RocketIllustration width={'100%'} height={'100%'} />
-          </Box>
-        </Box>
-      </Grid> */}
-    </Grid>
+      </React.Fragment>
   );
 };
 

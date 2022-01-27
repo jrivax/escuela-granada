@@ -119,16 +119,20 @@ const Form = () => {
               />
             </Grid>
             <Grid container>
-              <Grid item xs={9} sx={{
+              <Grid item sx={{
+                // height: { xs: 40, md: 50 },
+                // width: { xs: 75, md: 100 },
                 paddingLeft: 4,
                 paddingTop: 4
               }}>
-                <ReCAPTCHA
+                <ReCAPTCHA 
+                  size="compact"
                   sitekey={'6Le8IOYcAAAAAMsweb5rNm-PKSfEJ12Kpah4PzVX'}
                   onChange={sendEmail}
                 />
               </Grid>
-              <Grid item xs={3} sx={{
+              <Grid item xs sx={{
+                paddingLeft: 4,
                 paddingTop: 4
               }}>
                 <Button
