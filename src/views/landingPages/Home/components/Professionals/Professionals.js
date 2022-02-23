@@ -14,6 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedinIcon from "@mui/icons-material/Linkedin";
 
 import julioHerrero from "img/faces/julioHerrero.jpg";
 import eugenio from "img/faces/eugenio.png";
@@ -67,8 +68,8 @@ const Professionals = (props) => {
     autoplay: true,
   };
 
-  const handleClick = () => {
-    props.history.push("/");
+  const handleLinkToLinkedIn = (link) => {
+    window.open('https://'+link, '_blank');
   };
 
   return (
@@ -132,7 +133,7 @@ const Professionals = (props) => {
                 "Miembro  fundador del Centro de Psicoterapia Médica Escuela Granada en Madrid, donde ejerce como Psicólogo Psicoterapeuta desde 1985, realizando diversas actividades terapéutico- docentes.",
                 "Formadora de Monitores en la técnica de Entrenamiento en Relajación Creativa (Dr. Eugenio Herrero Lozano), tanto para adultos como infantil.",
                 "Practitioner en Programación Neurolingüística. 2001.",
-                "Entrenadora oficial MDR INSTITUTE para España. INSTITUTE USA Francine Sapiro",
+                "Entrenadora oficial EMDR INSTITUTE para España. INSTITUTE USA Francine Sapiro",
               ],
             },
             {
@@ -140,12 +141,13 @@ const Professionals = (props) => {
               title: "Médico Psicoterapeuta",
               avatar: `${ester}`,
               description: [
-                ,
-                "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid..",
-                "Especialista en Medicina Familiar y Comunitaria mediante el sistema M.I.R., tras formación en el Hospital Ramón y Cajal  y el Centro de Salud Dr. Cirajas,",
-                "Cursos de Doctorado realizados en la Universidad de Alcalá de Henares, Madrid. SUFICIENCIA INVESTIGADORA concedida en Noviembre de 1999, tras ser aprobado el Proyecto de Tesis titulado “Efecto de la Relajación Creativa en el Manejo de la Hipertensión Arterial”.",
-                "Master en Psicoterapia Individual y de Grupo por la Universidad Pontificia Comillas de Madrid.",
-                "Monitora de la Técnica Entrenamiento en Relajación Creativa",
+                "Licenciada en Medicina y Cirugía (Universidad Complutense de Madrid)",
+                "Especialista en Medicina Familiar y Comunitaria (Hospital Ramón y Cajal)",
+                "Médico en Madrid Salud (Ayuntamiento de Madrid)",
+                "Monitora de los Cursos de Entrenamiento en Relajación Creativa, Habilidades Emocionales y Consciencia Creativa",
+                "Master en Psicoterapia Individual y de Grupo (Universidad Pontificia de Comillas de Madrid)",
+                "Experta en Terapia Centrada en la Persona, Gestalt, Focusing, Bioenergética y Medicina Psicosomática",
+                "Master en Programación Neurolingüística",
               ],
             },
             {
@@ -153,17 +155,20 @@ const Professionals = (props) => {
               title: "Médico Psicóloga. Psicoterapeuta",
               avatar: `${maria}`,
               description: [
-                ,
-                "Licenciada en Psicología por la Universidad Autónoma de Madrid",
-                "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid.",
-                "Master en Psicoterapia Individual y de Grupo por la Universidad Pontificia Comillas de Madrid.",
-                "Experta en Terapia centrada en el cliente, Gestalt, Focusing, Bioenergética y Medicina Psicosomática.",
-                "Monitora de la Técnica Entrenamiento en Relajación Creativa",
+                "Licenciada en Psicología por la Universidad Autónoma de Madrid ",
+                "Licenciada en Medicina y Cirugía por la Universidad Complutense de Madrid ",
+                "Máster en Psicoterapia Individual y de Grupo por la Universidad Pontificia de Comillas de Madrid",
+                "Experta en Terapia centrada en el cliente, Gestalt, Focusing, Bioenergética y Medicina Psicosomática",
+                "Monitora de la Técnica Entrenamiento en Relajación Creativa para adultos, impartiendo la tecnica en diferentes centros. Entre ellos en el CIFSE (centro destinado a la capacitación y el entrenamiento del personal de los Cuerpos y Servicios de Seguridad, Emergencias y Movilidad.Centro Integral de Formación de Seguridad y Emergencias) del Ayuntamiento de Madrid",
+                "Monitora de la tecnica Entrenamiento  en Relajación Creativa online",
+                "Monitora de la Técnica Entrenamiento en Relajación Creativa para Adolescentes",
+                "Monitora de la Técnica Entrenamiento en Relajación Creativa Infantil",
+                "Experiencia de más de 15 años como psicoterapeuts haciendo terapias individuales y terapias de grupo",
               ],
             },
             {
               name: "Noelia Casas Giménez",
-              title: "Psicóloga",
+              title: "Psicóloga infanto-juvenil",
               avatar: `${noelia}`,
               description: [
                 "Licenciada en Psicología por la Universidad Autónoma de Madrid.",
@@ -184,10 +189,11 @@ const Professionals = (props) => {
               avatar: `${guadalupe}`,
               description: [
                 "Psicóloga sanitaria por la Universidad Complutense de Madrid",
-                " Experta en trastornos de ansiedad y sintomatología depresiva en adultos ",
-                " Experta en adicciones ",
-                " Experta en población infanto-juvenil",
+                "Experta en trastornos de ansiedad y sintomatología depresiva en adultos ",
+                "Experta en adicciones ",
+                "Experta en población infanto-juvenil",
               ],
+              linkedIn: "linkedin.com/in/guadalupe-mena-rodríguez-964317124",
             },
             {
               name: "Dña. Belén Pérez de la Oliva",
@@ -207,21 +213,6 @@ const Professionals = (props) => {
               avatar: `${mar}`,
               description: [],
             },
-            // {
-            //   name: 'Guadalupe Mena Rodriguez',
-            //   title: 'Psicólogo Psicoterapeuta',
-            //   avatar: `${girl}`,
-            // },
-            // {
-            //   name: 'Guadalupe Mena Rodriguez',
-            //   title: 'Psicólogo Psicoterapeuta',
-            //   avatar: `${girl}`,
-            // },
-            // {
-            //   name: 'Guadalupe Mena Rodriguez',
-            //   title: 'Psicólogo Psicoterapeuta',
-            //   avatar: `${girl}`,
-            // },
           ].map((item, i) => (
             // <Grid item xs={12} sm={6} md={3} key={i} data-aos={'fade-up'}>
             <Box
@@ -243,20 +234,25 @@ const Professionals = (props) => {
                 bgcolor={"transparent"}
                 marginTop={-5}
               >
-                <Box component={Card} borderRadius={2}>
+                <Box component={Card} borderRadius={2} sx={{ height: 160 }}>
                   <CardContent>
-                    <ListItemText primary={item.name} secondary={item.title} />
+                    <ListItemText primary={item.name} secondary={item.title} sx={{minHeight: 70}} />
                     <Grid container alignItems="center" marginTop={2}>
-                      <Grid item xs>
-                        <Box>
-                          <IconButton aria-label="facebook" size={"small"}>
-                            <FacebookIcon />
-                          </IconButton>
-                          <IconButton aria-label="twitter" size={"small"}>
-                            <TwitterIcon />
-                          </IconButton>
-                        </Box>
-                      </Grid>
+                      {item.linkedIn && (
+                        <Grid item xs>
+                          <Box>
+                            <IconButton
+                              aria-label="facebook"
+                              size={"small"}
+                              onClick={(e) =>
+                                handleLinkToLinkedIn(item.linkedIn)
+                              }
+                            >
+                              <LinkedinIcon />
+                            </IconButton>
+                          </Box>
+                        </Grid>
+                      )}
                       <Grid item>
                         <Box
                           component={CardActions}
