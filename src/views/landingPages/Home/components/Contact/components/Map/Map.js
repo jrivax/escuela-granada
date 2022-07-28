@@ -100,7 +100,7 @@ const Map = ({ themeMode = 'light' }) => {
             sx={{
               color: theme.palette.textWhite.primary
             }}
-            variant={'subtitle1'}>info@escuelagranada.com</Typography>
+            variant={'subtitle1'}>escuelagranada@hotmail.com</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography
